@@ -25,1415 +25,419 @@
 	<meta name="twitter:image" content="">
 	<meta name="twitter:creator" content="">
 	
-	<title>Home - Nencer.vn</title>
+	<title>Home - Tempalte Ticket Booking</title>
 	
 	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/select2/select2.min.css">
 	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/plugin/animate.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-
-<div class="modal-template">
-	<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content border-0">
-				<div class="login-main">
-					<div class="login-wrapper">
-						<div class="login-inner">
-							<div class="login-header">
-								<img src="./assets/images/logo.png">
-								<h1>Đăng nhập</h1>
-							</div>
-							<form class="form-effect" action="">
-								<div class="group-effect">
-									<input type="email" id="emailLogin" class="input-effect">
-									<label class="label-effect" for="emailLogin">
-										<i class="fas fa-envelope"></i>
-										<span>Email</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="password" tabindex="1" name="" id="passwordLogin" class="input-effect"
-									       autocomplete="off" required="">
-									<label class="label-effect" for="passwordLogin">
-										<i class="fas fa-lock"></i>
-										<span>Mật khẩu</span>
-									</label>
-								</div>
-								<p class="text-muted">Chưa có tài khoản,
-									<a href="javascript:void(0)" class="callModal" data-name="modalRegister">
-										đăng ký ngay bây giờ</a>
-								</p>
-								<div class="form-button d-flex align-items-end justify-content-between">
-									<button type="submit" class="btn btn-primary btn-customize">
-										<span>
-											Đăng nhập
-											<i class="fas fa-sign-in-alt"></i>
-										</span>
-									</button>
-									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
-								</div>
-							</form>
-						</div>
-					</div>
+<header class="border-bottom bg-white shadow-sm position-relative">
+	<div class="container">
+		<div class="row align-items-lg-center">
+			<div class="col-lg-2">
+				<div class="logo">
+					<a class="d-inline-block" href="index.html">
+						<img src="./assets/images/logo.png" alt="">
+					</a>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content border-0">
-				<div class="login-main">
-					<div class="login-wrapper">
-						<div class="login-inner">
-							<div class="login-header">
-								<img src="./assets/images/logo.png">
-								<h1>Đăng ký</h1>
-							</div>
-							<form class="form-effect" action="">
-								<div class="group-effect">
-									<input type="text" id="fullnameRegister" class="input-effect">
-									<label class="label-effect" for="fullnameRegister">
-										<i class="fas fa-envelope"></i>
-										<span>Fullname</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="email" id="emailRegister" class="input-effect">
-									<label class="label-effect" for="emailRegister">
-										<i class="fas fa-envelope"></i>
-										<span>Email</span>
-									</label>
-								</div>
-								<div class="group-effect">
-									<input type="password" tabindex="1" name="" id="passwordRegister"
-									       class="input-effect"
-									       autocomplete="off" required="">
-									<label class="label-effect" for="passwordRegister">
-										<i class="fas fa-lock"></i>
-										<span>Mật khẩu</span>
-									</label>
-								</div>
-								<p class="text-muted">
-									Đã có tài khoản,
-									<a href="javascript:void(0)" class="callModal" data-name="modalLogin">
-										Đăng nhập ngay
+			<div class="col-lg-7">
+				<div class="navigation">
+					<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start">
+						<li>
+							<a href="">
+								Chuyến bay
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Xe sân bay
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Đơn hàng
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Khuyến mãi
+								<i class="fal fa-angle-down ml-2"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="">
+										Submenu 01
 									</a>
-								</p>
-								<div class="form-button d-flex align-items-end justify-content-between">
-									<button type="submit" class="btn btn-primary btn-customize">
-										<span>
-											Đăng Ký
-											<i class="fas fa-sign-out-alt"></i>
-										</span>
-									</button>
-									<a href="javascript:void(0)" class="text-muted" data-dismiss="modal">Đóng</a>
-								</div>
-							</form>
-						</div>
-					</div>
+								</li>
+								<li>
+									<a href="">
+										Submenu 02
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">
+								Trợ giúp
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Tiện ích
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-
-<header id="header">
-	<div class="header-top border-bottom bg-light">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-sm-6 col-8">
-					<div class="d-flex align-items-center justify-content-start">
-						<div class="language d-flex align-items-center justify-content-center py-2">
+			<div class="col-lg-3">
+				<div class="row row-5 align-items-lg-center">
+					<div class="col-lg-5">
+						<div class="language d-flex align-items-center justify-content-end py-2">
 							<a href="javascript:void(0)">
-								<span>
-									<img src="./assets/images/language/vi.png" alt="">
-									Vietnamese
-								</span>
+						<span>
+							<img src="./assets/images/language/vi.png" alt="">
+							VI
+						</span>
 								<i class="fas fa-angle-down"></i>
 							</a>
 							<ul class="list-unstyled mb-0">
 								<li>
 									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/vi.png" alt="">
-											Vietnamese
-										</span>
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
 									</a>
 								</li>
 								<li>
 									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/en.png" alt="">
-											English
-										</span>
+								<span>
+									<img src="./assets/images/language/en.png" alt="">
+									English
+								</span>
 									</a>
 								</li>
 								<li>
 									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/japan.png" alt="">
-											Japanese
-										</span>
+								<span>
+									<img src="./assets/images/language/japan.png" alt="">
+									Japanese
+								</span>
 									</a>
 								</li>
 								<li>
 									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/vi.png" alt="">
-											Vietnamese
-										</span>
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
 									</a>
 								</li>
 								<li>
 									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/en.png" alt="">
-											English
-										</span>
+								<span>
+									<img src="./assets/images/language/en.png" alt="">
+									English
+								</span>
 									</a>
 								</li>
 								<li>
 									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/japan.png" alt="">
-											Japanese
-										</span>
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0)">
-										<span>
-											<img src="./assets/images/language/vi.png" alt="">
-											Vietnamese
-										</span>
+								<span>
+									<img src="./assets/images/language/japan.png" alt="">
+									Japanese
+								</span>
 									</a>
 								</li>
 							</ul>
 						</div>
-						<div class="currency py-2 position-relative py-3 pl-3 ml-3">
-							<a href="javascript:void(0)">
-								VND <i class="fas fa-angle-down"></i>
+					</div>
+					<div class="col-lg-7">
+						<div class="action d-flex align-items-center justify-content-end">
+							<a href="#modalLogin" class="btn btn-customize" data-toggle="modal">
+								<span class="text">Đăng nhập</span>
+								<span class="icon"><i class="fal fa-sign-in-alt"></i></span>
 							</a>
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a class="d-block" href="javascript:void(0)">VND</a>
-								</li>
-								<li>
-									<a class="d-block" href="javascript:void(0)">USD</a>
-								</li>
-								<li>
-									<a class="d-block" href="javascript:void(0)">EUR</a>
-								</li>
-							</ul>
 						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-4">
-					<div class="text-md-right text-center py-2 d-flex align-items-center justify-content-end">
-						<a href="#modalLogin" data-toggle="modal"
-						   class="btn btn-outline-primary btn-customize mr-2 d-none d-md-flex"><span>Đăng nhập</span></a>
-						<a href="#modalRegister" data-toggle="modal"
-						   class="btn btn-primary btn-customize d-none d-md-flex"><span>Bắt đầu</span></a>
-						<a href="#modalLogin" data-toggle="modal"
-						   class="btn btn-primary btn-customize d-flex d-md-none"><span>Tài khoản</span></a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="header-bottom bg-white">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="logo">
-						<a href="#" class="d-inline-block">
-							<img src="./assets/images/logo.png" alt="Logo - Nencer.vn">
-						</a>
-						<div class="hamburger" id="hamburger">
-							<span></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<div class="navigation">
-						<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-end" id="hasMenu">
-							<li>
-								<a href="index.html">
-									Trang chủ
-								</a>
-							</li>
-							<li>
-								<a href="app.html">
-									Phần mềm
-								</a>
-							</li>
-							<li>
-								<a href="module.html">
-									Mô-đun
-								</a>
-							</li>
-							<li>
-								<a href="solution.html">
-									Giải pháp
-								</a>
-							</li>
-							<li>
-								<a href="outsourcing.html">
-									Outsourcing
-								</a>
-							</li>
-							<li>
-								<a href="service.html">
-									Dịch vụ
-									<i class="fas fa-angle-down"></i>
-								</a>
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="single-service.html">
-											Tên miền
-										</a>
-									</li>
-									<li>
-										<a href="single-service.html">
-											Hosting
-										</a>
-									</li>
-									<li>
-										<a href="single-service.html">
-											Cloud Vps
-										</a>
-									</li>
-									<li>
-										<a href="single-service.html">
-											Chứng thư SSL
-										</a>
-									</li>
-									<li>
-										<a href="single-service.html">
-											Dịch vụ Email
-										</a>
-									</li>
-									<li>
-										<a href="single-service.html">
-											Dedicated Server
-										</a>
-									</li>
-									<li>
-										<a href="single-service.html">
-											Gói hỗ trợ
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="contact.html">
-									Liên hệ
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="header-overlay"></div>
 	</div>
 </header>
 <div class="main">
-	<section class="block-banner">
+	<div class="block-banner position-relative">
 		<div class="swiper-container" id="swiper-banner">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-md-6 order-2 order-md-1">
-								<h3 class="slide-title">
-									Test Phần mềm và tiện ích trực tuyến
-								</h3>
-								<p class="slide-desc">Cung cấp các giải pháp công nghệ thông tin cho doanh nghiệp,
-									tối
-									ưu chi phí, tăng
-									hiệu quả công việc, dễ dàng quản lý.</p>
-								<div class="text-center text-md-left">
-									<a href="" class="slide-button btn btn-warning btn-customize">
-										<span>Xem chi tiết</span>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-6 order-1 order-md-2">
-								<div class="slide-image">
-									<a href="#" class="d-inline-block">
-										<img src="./assets/images/banner/phanmemweb.png" alt="">
-									</a>
+					<div class="swiper-image" style="background-image: url('./assets/images/banner/bg-1.jpg')">
+						<div class="swiper-inner h-100 d-flex align-items-center">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6">
+										<h3 class="text-white text-capitalize font-weight-bold mb-0">
+											Experience the best trip ever
+										</h3>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="swiper-slide">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-md-6 order-2 order-md-1">
-								<h3 class="slide-title">
-									Dịch vụ outsourcing chất lượng cao
-								</h3>
-								<p class="slide-desc">Kinh nghiệm trên 10 năm trong nghề, nghiên cứu nhiều giải pháp
-									công nghệ, đáp ứng các ngôn ngữ lập trình tốt nhất hiện nay.
-								</p>
-								<div class="text-center text-md-left">
-									<a href="" class="slide-button btn btn-warning btn-customize">
-										<span>Xem chi tiết</span>
-									</a>
-								</div>
-							</div>
-							<div class="col-md-6 order-1 order-md-2">
-								<div class="slide-image">
-									<a href="#" class="d-inline-block">
-										<img src="./assets/images/banner/it_solutions.png" alt="">
-									</a>
+					<div class="swiper-image" style="background-image: url('./assets/images/banner/bg-2.jpg')">
+						<div class="swiper-inner h-100 d-flex align-items-center">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6">
+										<h3 class="text-white text-capitalize font-weight-bold mb-0">
+											Making the most out of your holiday
+										</h3>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		</div>
-	</section>
-	<section class="block-solution pt-5 pb-2 bg-white">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="heading text-center position-relative pb-5">
-						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Giải pháp công
-							nghệ</h2>
-						<p class="heading-desc text-black-50 h6 mb-3 text-uppercase">
-							Mang lại hiệu quả vượt bậc trong quản lý & kinh doanh trên Internet
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/drm_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">DRM</h5>
-							</a>
-							<p class="card-text mt-3">
-								Giải pháp giúp bạn bảo vệ video trực tuyến và các tài liệu bằng mã hoá an toàn
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/security_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Bảo mật hệ thống</h5>
-							</a>
-							<p class="card-text mt-3">NENCER là công ty cung cấp dịch vụ và giải pháp về
-								CNTT, với hơn 10 năm
-								kinh nghiệm trong lĩnh vực này</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/ocr_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Số hoá tài liệu</h5>
-							</a>
-							<p class="card-text mt-3">
-								Quy trình quản lý tài liệu số bắt đầu bằng việc chuyển đổi các tài liệu giấy & sổ ssasch
-								sang những hồ sơ điện tử có thể lưu trữ dưới dạng file mềm
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/ecommerce_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Quản trị bán hàng</h5>
-							</a>
-							<p class="card-text mt-3">
-								Có rất nhiều đơn vị cung cấp nền tảng website bán hàng trực tuyến. Tuy nhiên vẫn chỉ
-								thực hiện được 1 khâu trong quy trình bán hàng
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/coin_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Blockchain</h5>
-							</a>
-							<p class="card-text mt-3">
-								Tiền mã hóa là một tài sản kỹ thuật số được thiết kế để làm việc như là một trung gian
-								trao đổi mà sử dụng mật mã để đảm bảo các giao dịch của nó mà không qua trung tâm xử lý.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 mb-4">
-					<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-solution">
-						<div class="card-header border-bottom-0 d-flex align-items-center justify-content-center position-relative bg-white mx-auto p-0">
-							<img class="card-img-top" src="./assets/images/solution/elearning_solution.png"
-							     alt="Bảo mật hệ thống">
-							<div class="card-mask"></div>
-							<a href="single-solution-outsourcing.html" class="card-link-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<div class="card-body">
-							<a href="single-solution-outsourcing.html">
-								<h5 class="card-title mb-0 font-weight-bold d-inline-block">Học trực tuyến</h5>
-							</a>
-							<p class="card-text mt-3">
-								Giáo dục trực tuyến là hình thức đào tạo từ xa trong đó học sinh
-								không có mặt trên thực tế để tiếp thu bài học và đang bùng nổ nhờ sức mạnh của Internet.
-							</p>
+				<div class="swiper-slide">
+					<div class="swiper-image" style="background-image: url('./assets/images/banner/bg-3.jpg')">
+						<div class="swiper-inner h-100 d-flex align-items-center">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6">
+										<h3 class="text-white text-capitalize font-weight-bold mb-0">
+											Travel operator just for you
+										</h3>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<section class="block-website py-md-5 pt-5 pb-3 bg-light">
+		<div class="block-form position-absolute">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card border-0 bg-transparent card-search">
+							<div class="card-header rounded-0 p-0 bg-transparent">
+								<ul class="nav nav-tabs border-bottom-0" id="tab-booking">
+									<li class="nav-item">
+										<a class="nav-link active mb-0 border-0" data-toggle="tab"
+										   href="#tab-booking-01">
+												<span class="font-weight-bold d-block">
+													<i class="fal fa-plane"></i>
+													Chuyến bay
+												</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mb-0 border-0" data-toggle="tab"
+										   href="#tab-booking-02">
+												<span class="font-weight-bold d-block">
+													<i class="fal fa-plane"></i>
+													Chuyến bay 02
+												</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="card-body bg-white">
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="tab-booking-01">
+										<form action="">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="inner">
+														<label for="">Dari</label>
+														<select name="states[]" class="flight-select form-control">
+															<option value="SUBC"
+															        title="Jakarta, Indonesia|Jakarta|SUBC">
+																Jakarta (SUBC)
+															</option>
+															<option value="SUBC"
+															        title="Surabaya, Indonesia|Surabaya|SUBC">
+																Surabaya (SUBC)
+															</option>
+															<option value="JOGC"
+															        title="Yogyakarta, Indonesia|Yogyakarta|JOGC">
+																Yogyakarta (JOGC)
+															</option>
+															<option value="SUBC"
+															        title="Jakarta, Indonesia|Jakarta|SUBC">
+																Jakarta (SUBC)
+															</option>
+															<option value="SUBC"
+															        title="Surabaya, Indonesia|Surabaya|SUBC">
+																Surabaya (SUBC)
+															</option>
+															<option value="JOGC"
+															        title="Yogyakarta, Indonesia|Yogyakarta|JOGC">
+																Yogyakarta (JOGC)
+															</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<div class="inner">
+														<a href="javascript:void(0)" class="form-icon"
+														   id="changeFlight">
+															<i class="fal fa-exchange"></i>
+														</a>
+													</div>
+												</div>
+												<div class="col-md-5">
+													<div class="inner">
+														<label for="">Dari</label>
+														<select name="states[]" class="flight-select form-control">
+															<option value="SUBC"
+															        title="Jakarta, Indonesia|Jakarta|SUBC">
+																Jakarta (SUBC)
+															</option>
+															<option value="SUBC"
+															        title="Surabaya, Indonesia|Surabaya|SUBC">
+																Surabaya (SUBC)
+															</option>
+															<option value="JOGC"
+															        title="Yogyakarta, Indonesia|Yogyakarta|JOGC">
+																Yogyakarta (JOGC)
+															</option>
+															<option value="SUBC"
+															        title="Jakarta, Indonesia|Jakarta|SUBC">
+																Jakarta (SUBC)
+															</option>
+															<option value="SUBC"
+															        title="Surabaya, Indonesia|Surabaya|SUBC">
+																Surabaya (SUBC)
+															</option>
+															<option value="JOGC"
+															        title="Yogyakarta, Indonesia|Yogyakarta|JOGC">
+																Yogyakarta (JOGC)
+															</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="tab-pane fade" id="tab-booking-02">
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-intro bg-light border-bottom py-4">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="heading text-center position-relative pb-5">
-						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Thiết kế
-							website</h2>
-						<p class="heading-desc text-black-50 h6 mb-3 text-uppercase">
-							Các phần mềm có sẵn giúp tiết kiệm chi phí và rút ngắn thời gian xây dựng
-						</p>
+					<div class="heading-block position-relative mb-4">
+						<h3 class="mb-0 py-2 font-weight-bold text-dark">Tại sao chọn VeDienTu</h3>
 					</div>
 				</div>
 				<div class="col-12">
 					<div class="row">
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/1.svg" alt="">
 								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 mb-4">
-							<div class="card card-website bg-white border-0 shadow">
-								<div class="card-body py-5 px-4">
-									<a href="single-app.html" class="d-block">
-										<img src="./assets/images/website/prepaid-cart.png" alt="">
-									</a>
-									<div class="my-4">
-										<a href="single-app.html" class="d-block">
-											<h3 class="font-weight-bold h5">THIẾT KẾ WEBSITE HỌC TRỰC TUYẾN</h3>
-										</a>
-										<div class="meta text-muted d-flex align-items-center justify-content-start">
-											<span>Cập nhật: 23-02-2021</span>
-											<span>Xem: 4212</span>
-										</div>
-									</div>
-									<div class="card-text">
-										Sản phẩm giúp bạn xây dựng hệ thống quản lý khóa học và bán khóa học, thi
-										online, trắc nghiệm, ngân hàng câu hỏi. Hỗ trợ thanh toán trực tuyến qua các
-										ngân hàng hoặc thẻ cào điện thoại.
-									</div>
-									<div class="card-action d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
-										<div class="d-flex align-items-start justify-content-center">
-											<span class="price h4 text-danger font-weight-bold mb-0">20,000,000</span>
-											<span class="text-muted ml-1">₫</span>
-										</div>
-										<a href="single-app.html" class="btn btn-primary btn-customize">
-											<span>Xem thêm</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="block-app py-5 bg-white">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="heading text-center position-relative pb-5">
-						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Gia công phần
-							mềm</h2>
-						<p class="heading-desc text-black-50 h6 mb-3 text-uppercase">
-							NHIỀU LOẠI NGÔN NGỮ LẬP TRÌNH, KỸ SƯ GIỎI TRÊN 10 NĂM KINH NGHIỆM
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="row row-10">
-						<div class="col-lg-3 col-6 mb-3 mb-lg-0">
-							<div class="card rounded-0 bg-white text-center card-decor card-app">
-								<div class="card-header border-0 position-relative bg-white">
-									<img class="card-img-top" src="./assets/images/app/outsource_app.png"
-									     alt="Lập trình ứng dụng di động">
-									<div class="card-mask"></div>
-									<a href="single-solution-outsourcing.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-solution-outsourcing.html">
-										<h5 class="card-title mb-0 d-inline-block">Lập trình ứng dụng
-											di động</h5>
-									</a>
-									<p class="card-text mt-3">
-										Những ngành nghề liên quan tới công nghệ thông tin ngày càng phát triển mạnh mẽ
-										để bắt kịp với xu hướng chung.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-6 mb-3 mb-lg-0">
-							<div class="card rounded-0 bg-white text-center card-decor card-app">
-								<div class="card-header border-0 position-relative bg-white">
-									<img class="card-img-top" src="./assets/images/app/outsource_python.png"
-									     alt="Lập trình Python">
-									<div class="card-mask"></div>
-									<a href="single-solution-outsourcing.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-solution-outsourcing.html">
-										<h5 class="card-title mb-0 d-inline-block">Lập trình
-											Python</h5>
-									</a>
-									<p class="card-text mt-3">
-										Python là ngôn ngữ lập trình hướng đối tượng, cấp cao, mạnh mẽ, được tạo ra bởi
-										Guido van Rossum.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-6 mb-3 mb-lg-0">
-							<div class="card rounded-0 bg-white text-center card-decor card-app">
-								<div class="card-header border-0 position-relative bg-white">
-									<img class="card-img-top" src="./assets/images/app/outsource_springboot.png"
-									     alt="Lập trình ứng dụng di động">
-									<div class="card-mask"></div>
-									<a href="single-solution-outsourcing.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-solution-outsourcing.html">
-										<h5 class="card-title mb-0 d-inline-block">Lập trình Java
-											Spring Boot</h5>
-									</a>
-									<p class="card-text mt-3">
-										Spring Boot là một dự án phát triển bởi JAV (ngôn ngữ java) trong hệ sinh thái
-										Spring framework.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-6 mb-3 mb-lg-0">
-							<div class="card rounded-0 bg-white text-center card-decor card-app">
-								<div class="card-header border-0 position-relative bg-white">
-									<img class="card-img-top" src="./assets/images/app/outsource_laravel.png"
-									     alt="Lập trình ứng dụng di động">
-									<div class="card-mask"></div>
-									<a href="single-solution-outsourcing.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-solution-outsourcing.html">
-										<h5 class="card-title mb-0 d-inline-block">Lập trình
-											Laravel</h5>
-									</a>
-									<p class="card-text mt-3">
-										Laravel là một trong những PHP Framework phổ biến nhất trên thế giới được sử
-										dụng để xây dựng ứng dụng web từ các dự án nhỏ đến lớn.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="block-module py-5 bg-light">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="heading text-center position-relative pb-5">
-						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Các mô-đun trả
-							phí</h2>
-						<p class="heading-desc text-black-50 h6 mb-3 text-uppercase">
-							THƯ VIỆN TIỆN ÍCH GIÚP BẠN NHANH CHÓNG TÍCH HỢP VÀO WEBSITE CỦA MÌNH
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="row">
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/paypal.jpg"
-									     alt="Cổng thanh toán Paypal">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Paypal</h5>
-									</a>
-									<div class="card-price">
-										2.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
-									<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
-									     alt="Bảo mật hệ thống">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán Ngân
-											Lượng</h5>
-									</a>
-									<div class="card-price">
-										1.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/onepay.jpg"
-									     alt="Cổng thanh toán Onepay">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Onepay</h5>
-									</a>
-									<div class="card-price">
-										2.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
-									     alt="Cổng thanh toán Momo">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Momo</h5>
-									</a>
-									<div class="card-price">
-										10.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
-									     alt="Cổng thanh toán Zalopay">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Zalopay</h5>
-									</a>
-									<div class="card-price">
-										15.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
-									     alt="Cổng thanh toán VNpay">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Vnpay</h5>
-									</a>
-									<div class="card-price">
-										8.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/paypal.jpg"
-									     alt="Cổng thanh toán Paypal">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Paypal</h5>
-									</a>
-									<div class="card-price">
-										2.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto ">
-									<img class="card-img-top" src="./assets/images/module/nganluong.jpg"
-									     alt="Bảo mật hệ thống">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán Ngân
-											Lượng</h5>
-									</a>
-									<div class="card-price">
-										1.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/onepay.jpg"
-									     alt="Cổng thanh toán Onepay">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Onepay</h5>
-									</a>
-									<div class="card-price">
-										2.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/momo_p.jpg"
-									     alt="Cổng thanh toán Momo">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Momo</h5>
-									</a>
-									<div class="card-price">
-										10.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/zalopay.jpg"
-									     alt="Cổng thanh toán Zalopay">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Zalopay</h5>
-									</a>
-									<div class="card-price">
-										15.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-4">
-							<div class="card rounded-0 border-0 bg-transparent text-center card-decor card-module">
-								<div class="card-header p-2 overflow-hidden border d-flex align-items-center justify-content-center position-relative bg-white mx-auto">
-									<img class="card-img-top" src="./assets/images/module/vnpay.jpg"
-									     alt="Cổng thanh toán VNpay">
-									<div class="card-mask"></div>
-									<a href="single-module.html" class="card-link-animation">
-										<span></span>
-										<span></span>
-										<span></span>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="single-module.html">
-										<h5 class="card-title mb-0 font-weight-bold d-inline-block">Cổng thanh toán
-											Vnpay</h5>
-									</a>
-									<div class="card-price">
-										8.000.000 VNĐ
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="block-wrapper py-5 bg-white">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 order-md-1 order-2 mt-3 mt-md-0">
-					<div class="heading text-center position-relative pb-5">
-						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Tại sao chọn chúng
-							tôi</h2>
-					</div>
-					<div id="why">
-						<div class="card card-collapse">
-							<div class="card-header">
-								<a href="javascript:void(0)"
-								   class="mb-0 d-flex align-items-center justify-content-between"
-								   data-toggle="collapse" data-target="#why01">
-									1. Phần mềm chuyên nghiệp và có sẵn
-									<i class="fa fa-angle-down"></i>
-								</a>
-							</div>
-							
-							<div id="why01" class="collapse"
-							     data-parent="#why">
-								<div class="card-body">
-									Các phần mềm của Nencer đang phát triển rất tiện lợi, tỉ mỉ, chuẩn nghiệp vụ, bảo
-									mật cao, linh động chỉnh sửa, và có luôn có sẵn giúp bạn tiết kiệm thời gian xây
-									dựng.
-								</div>
-							</div>
-						</div>
-						<div class="card card-collapse">
-							<div class="card-header">
-								<a href="javascript:void(0)"
-								   class="mb-0 d-flex align-items-center justify-content-between"
-								   data-toggle="collapse" data-target="#why02">
-									2. Hỗ trợ kỹ thuật sau bán hàng
-									<i class="fa fa-angle-down"></i>
-								</a>
-							</div>
-							
-							<div id="why02" class="collapse"
-							     data-parent="#why">
-								<div class="card-body">
-									Cam kết hỗ trợ tất cả các vấn đề kỹ thuật (phần mềm, máy chủ) sau khi bàn giao. Thời
-									gian hỗ trợ trong và ngoài giờ hành chính, kể cả ngày lễ. Hình thức qua email hoặc
-									chat.
-								</div>
-							</div>
-						</div>
-						<div class="card card-collapse">
-							<div class="card-header">
-								<a href="javascript:void(0)"
-								   class="mb-0 d-flex align-items-center justify-content-between"
-								   data-toggle="collapse" data-target="#why03">
-									3. Miễn phí nâng cấp phần mềm
-									<i class="fa fa-angle-down"></i>
-								</a>
-							</div>
-							
-							<div id="why03" class="collapse"
-							     data-parent="#why">
-								<div class="card-body">
-									Các sản phẩm của Nencer đều được phát triển hàng ngày để tối ưu công năng, chúng tôi
-									miễn phí nâng cấp cho tất cả khách hàng theo điều khoản của hợp đồng thiết kế.
-								</div>
-							</div>
-						</div>
-						<div class="card card-collapse">
-							<div class="card-header">
-								<a href="javascript:void(0)"
-								   class="mb-0 d-flex align-items-center justify-content-between"
-								   data-toggle="collapse" data-target="#why04">
-									4. Ngôn ngữ lập trình hiện đại
-									<i class="fa fa-angle-down"></i>
-								</a>
-							</div>
-							
-							<div id="why04" class="collapse"
-							     data-parent="#why">
-								<div class="card-body">
-									Ngôn ngữ lập trình mà chúng tôi sử dụng đều trên nền các framework hàng đầu như PHP
-									Laravel, .NET Core, Python Django, Java String Boot, Nodejs, Flutter, Swift, Kotlin.
-								</div>
-							</div>
-						</div>
-						<div class="card card-collapse">
-							<div class="card-header">
-								<a href="javascript:void(0)"
-								   class="mb-0 d-flex align-items-center justify-content-between"
-								   data-toggle="collapse" data-target="#why05">
-									5. Giá thành sản phẩm hợp lý
-									<i class="fa fa-angle-down"></i>
-								</a>
-							</div>
-							
-							<div id="why05" class="collapse"
-							     data-parent="#why">
-								<div class="card-body">
-									Chất lượng sản phẩm được các khách hàng đánh giá tốt, giá thành hợp lý, không có bất
-									kỳ phí ẩn nào so với giá công bố.
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 order-md-2 order-1 m-0 mt-md-4 mt-lg-0">
-					<div class="heading text-center position-relative pb-5">
-						<h2 class="heading-title font-weight-bolder text-dark text-uppercase h3 mb-3">Tin tức & sự
-							kiện</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="card card-blog mb-3 mb-md-0">
-								<div class="card-header">
-									<span class="card-header-image"
-									      style="background-image:url('https://i.picsum.photos/id/201/300/300.jpg?hmac=_rxkWLIRjtC0llnrLSRm7TvKgiQS_GquUeyXZnK9Lg8')">
-										<a href="single-solution-outsourcing.html"></a>
-									</span>
-									<span class="card-header-readmore">
-										<a href="single-solution-outsourcing.html">
-			                                Xem chi tiết
-			                                <i class="fa fa-chevron-right"></i>
-										</a>
-									</span>
-								</div>
-								<div class="card-body">
+								<div class="card-body text-center">
 									<div class="card-title">
-										<a href="single-solution-outsourcing.html">
-											Hướng dẫn cài đặt vestacp trên Ubuntu 18 để chạy Laravel
-										</a>
+										Đơn giản hóa trải nghiệm đặt chỗ của bạn
 									</div>
 									<div class="card-text">
-										Vestacp là phần mềm quản trị máy chủ Linux hoàn toàn miễn phí. Nếu các bạn nào
-										đang chạy Laravel thì nên sử dụng vestacp vì nó hỗ trợ phiên bản php7.2 rất tốt
-										khi cài trên môi trường Ubuntu 18.04 x64.
+										Cảm nhận sự linh hoạt và đơn giản trong suốt quá trình đặt chỗ của bạn
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="card card-blog mb-3 mb-md-0">
-								<div class="card-header">
-									<span class="card-header-image"
-									      style="background-image:url('https://i.picsum.photos/id/853/300/300.jpg?hmac=aqs3F1zcdxAGCGrcWCHur3ro45pn9KmzwsF7OdQRiIU')">
-										<a href="single-solution-outsourcing.html"></a>
-									</span>
-									<span class="card-header-readmore">
-										<a href="#">
-			                                Xem chi tiết
-			                                <i class="fa fa-chevron-right"></i>
-										</a>
-									</span>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/2.svg" alt="">
 								</div>
-								<div class="card-body">
+								<div class="card-body text-center">
 									<div class="card-title">
-										<a href="single-solution-outsourcing.html">
-											HƯớng dẫn cài đặt IonCube Trên Máy Chủ Linux
-										</a>
+										Hứng thú với Đặt chỗ địa phương trên toàn thế giới
 									</div>
 									<div class="card-text">
-										Vestacp là phần mềm quản trị máy chủ Linux hoàn toàn miễn phí. Nếu các bạn nào
-										đang chạy Laravel thì nên sử dụng vestacp vì nó hỗ trợ phiên bản php7.2 rất tốt
-										khi cài trên môi trường Ubuntu 18.04 x64.
+										Trải nghiệm cảm giác thoải mái khi đặt chỗ bằng phương thức thanh toán, tiền tệ
+										và ngôn ngữ địa phương
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/3.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Đa dạng sự lựa chọn để đi du lịch
+									</div>
+									<div class="card-text">
+										Tận hưởng những khoảnh khắc đáng nhớ với hàng triệu chuyến bay và chỗ ở thuận
+										thuận tiện
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/4.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Ưu đãi độc quyền mỗi ngày
+									</div>
+									<div class="card-text">
+										Vô số chương trình khuyến mãi hàng ngày với giá cả cạnh tranh cho tất cả khách
+										du lịch
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/5.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Nơi đặt chỗ trực tuyến chuyên nghiệp
+									</div>
+									<div class="card-text">
+										Cùng với các đối tác đáng tin cậy, chúng tôi đã đáp ứng vô số nhu cầu của khách
+										du lịch kể từ năm 2011
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/6.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Hỗ trợ khách hàng nhiệt tình
+									</div>
+									<div class="card-text">
+										Hỗ trợ tốt nhất, bộ phận hỗ trợ khách hàng của chúng tôi luôn sẵn sàng 24/7 bất
+										kể ngôn ngữ địa phương bạn sử dụng
 									</div>
 								</div>
 							</div>
@@ -1442,173 +446,361 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+	<div class="block-recommended bg-white border-bottom py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="heading-block position-relative mb-4">
+						<h3 class="mb-0 py-2 font-weight-bold text-dark">Gợi ý cho bạn</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row row-col-10">
+				<div class="col-lg-6 col-md-4">
+					<div class="card rounded-0 border-0 position-relative overflow-hidden card-recommended">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/recommended/1.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<div class="card-subtitle mb-2">
+									Từ <span class="font-weight-bold">Yulara</span>
+								</div>
+								<h6 class="card-title position-relative mb-0 text-white">
+									<i class="fal fa-plane"></i>Melbourne Avalon
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Bắt đầu từ</small>
+									<span>
+										7.596.429 <sup>₫</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="card rounded-0 border-0 position-relative overflow-hidden card-recommended">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/recommended/2.webp')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<div class="card-subtitle mb-2">
+									Từ <span class="font-weight-bold">Huế</span>
+								</div>
+								<h6 class="card-title position-relative mb-0 text-white">
+									<i class="fal fa-plane"></i>Tp. Hồ Chí Minh
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Bắt đầu từ</small>
+									<span>
+										530.006 <sup>₫</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="card rounded-0 border-0 position-relative overflow-hidden card-recommended">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/recommended/3.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<div class="card-subtitle mb-2">
+									Từ <span class="font-weight-bold">Tp. Hồ Chí Minh</span>
+								</div>
+								<h6 class="card-title position-relative mb-0 text-white">
+									<i class="fal fa-plane"></i>Hà Nội
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Bắt đầu từ</small>
+									<span>
+										567.000 <sup>₫</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-col-10">
+				<div class="col-lg-3 col-md-4">
+					<div class="card rounded-0 border-0 position-relative overflow-hidden card-recommended">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/recommended/4.webp')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<div class="card-subtitle mb-2">
+									Từ <span class="font-weight-bold">Huế</span>
+								</div>
+								<h6 class="card-title position-relative mb-0 text-white">
+									<i class="fal fa-plane"></i>Tp. Hồ Chí Minh
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Bắt đầu từ</small>
+									<span>
+										530.006 <sup>₫</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<div class="card rounded-0 border-0 position-relative overflow-hidden card-recommended">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/recommended/5.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<div class="card-subtitle mb-2">
+									Từ <span class="font-weight-bold">Tp. Hồ Chí Minh</span>
+								</div>
+								<h6 class="card-title position-relative mb-0 text-white">
+									<i class="fal fa-plane"></i>Hà Nội
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Bắt đầu từ</small>
+									<span>
+										567.000 <sup>₫</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-4">
+					<div class="card rounded-0 border-0 position-relative overflow-hidden card-recommended">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img" style="background-image: url('./assets/images/recommended/6.png')"></div>
+						<div class="card-img-overlay p-0">
+							<div class="card-inner w-100 h-100">
+								<div class="card-subtitle mb-2">
+									Từ <span class="font-weight-bold">Yulara</span>
+								</div>
+								<h6 class="card-title position-relative mb-0 text-white">
+									<i class="fal fa-plane"></i>Melbourne Avalon
+								</h6>
+								<div class="card-line"></div>
+								<div class="card-price">
+									<small>Bắt đầu từ</small>
+									<span>
+										7.596.429 <sup>₫</sup>
+									</span>
+								</div>
+								<div class="card-action">
+									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-popular border-bottom py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="heading-block position-relative mb-4">
+						<h3 class="mb-0 py-2 font-weight-bold text-dark">Khách sạn phổ biến</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row row-col-10">
+				<div class="col-lg-3 col-md-6">
+					<div class="card shadow-sm position-relative overflow-hidden card-popular">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img rounded-0 position-relative"
+						     style="background-image: url('./assets/images/hotel/1.jpg')">
+							<span class="card-rating position-absolute">
+								<div class="rating-value">
+									<p class="mb-0">
+										<small><i class="fas fa-star"></i></small>
+									    8.3
+									</p>
+									<svg width="56" height="49" viewBox="0 0 56 49" fill="none"
+									     xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+										      d="M0.763855 0C0.78115 0.151691 0.796747 0.305769 0.810614 0.462263C0.995736 2.55133 1.10013 4.88231 1.21108 7.35957C2.03304 25.7124 3.21456 52.0935 40.2446 47.6133C46.4899 46.8577 51.6026 45.9947 55.7636 45.0705V5C55.7636 2.23858 53.525 0 50.7636 0H0.763855Z"
+										      fill="url(#paint0_linear)"></path>
+										<defs>
+											<linearGradient id="paint0_linear" x1="28.2637" y1="0" x2="28.2637"
+											                y2="48.1171"
+											                gradientUnits="userSpaceOnUse">
+												<stop stop-color="#ffaa4f"></stop>
+												<stop offset="1" stop-color="#FE8200"></stop>
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="card-title">
+								Victoria Phan Thiet Beach Resort and Spa
+							</div>
+							<div class="card-price">
+								<small>Từ</small>
+								<span>
+									 2.515.748 <sup>₫</sup>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="card shadow-sm rounded-0 position-relative overflow-hidden card-popular">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img rounded-0 position-relative"
+						     style="background-image: url('./assets/images/hotel/2.jpg')">
+							<span class="card-rating position-absolute">
+								<div class="rating-value">
+									<p class="mb-0">
+										<small><i class="fas fa-star"></i></small>
+									    8.5
+									</p>
+									<svg width="56" height="49" viewBox="0 0 56 49" fill="none"
+									     xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+										      d="M0.763855 0C0.78115 0.151691 0.796747 0.305769 0.810614 0.462263C0.995736 2.55133 1.10013 4.88231 1.21108 7.35957C2.03304 25.7124 3.21456 52.0935 40.2446 47.6133C46.4899 46.8577 51.6026 45.9947 55.7636 45.0705V5C55.7636 2.23858 53.525 0 50.7636 0H0.763855Z"
+										      fill="url(#paint0_linear)"></path>
+										<defs>
+											<linearGradient id="paint0_linear" x1="28.2637" y1="0" x2="28.2637"
+											                y2="48.1171"
+											                gradientUnits="userSpaceOnUse">
+												<stop stop-color="#ffaa4f"></stop>
+												<stop offset="1" stop-color="#FE8200"></stop>
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="card-title">
+								Bao Quynh Bungalow
+							</div>
+							<div class="card-price">
+								<small>Từ</small>
+								<span>
+									 871.047 <sup>₫</sup>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="card shadow-sm position-relative overflow-hidden card-popular">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img rounded-0 position-relative"
+						     style="background-image: url('./assets/images/hotel/3.jpg')">
+							<span class="card-rating position-absolute">
+								<div class="rating-value">
+									<p class="mb-0">
+										<small><i class="fas fa-star"></i></small>
+									    8.3
+									</p>
+									<svg width="56" height="49" viewBox="0 0 56 49" fill="none"
+									     xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+										      d="M0.763855 0C0.78115 0.151691 0.796747 0.305769 0.810614 0.462263C0.995736 2.55133 1.10013 4.88231 1.21108 7.35957C2.03304 25.7124 3.21456 52.0935 40.2446 47.6133C46.4899 46.8577 51.6026 45.9947 55.7636 45.0705V5C55.7636 2.23858 53.525 0 50.7636 0H0.763855Z"
+										      fill="url(#paint0_linear)"></path>
+										<defs>
+											<linearGradient id="paint0_linear" x1="28.2637" y1="0" x2="28.2637"
+											                y2="48.1171"
+											                gradientUnits="userSpaceOnUse">
+												<stop stop-color="#ffaa4f"></stop>
+												<stop offset="1" stop-color="#FE8200"></stop>
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="card-title">
+								Blue Ocean Resort
+							</div>
+							<div class="card-price">
+								<small>Từ</small>
+								<span>
+									 1.215.748 <sup>₫</sup>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="card shadow-sm position-relative overflow-hidden card-popular">
+						<a href="#" class="link-cover"></a>
+						<div class="card-img rounded-0 position-relative"
+						     style="background-image: url('./assets/images/hotel/4.jpg')">
+							<span class="card-rating position-absolute">
+								<div class="rating-value">
+									<p class="mb-0">
+										<small><i class="fas fa-star"></i></small>
+									    8.3
+									</p>
+									<svg width="56" height="49" viewBox="0 0 56 49" fill="none"
+									     xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+										      d="M0.763855 0C0.78115 0.151691 0.796747 0.305769 0.810614 0.462263C0.995736 2.55133 1.10013 4.88231 1.21108 7.35957C2.03304 25.7124 3.21456 52.0935 40.2446 47.6133C46.4899 46.8577 51.6026 45.9947 55.7636 45.0705V5C55.7636 2.23858 53.525 0 50.7636 0H0.763855Z"
+										      fill="url(#paint0_linear)"></path>
+										<defs>
+											<linearGradient id="paint0_linear" x1="28.2637" y1="0" x2="28.2637"
+											                y2="48.1171"
+											                gradientUnits="userSpaceOnUse">
+												<stop stop-color="#ffaa4f"></stop>
+												<stop offset="1" stop-color="#FE8200"></stop>
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+							</span>
+						</div>
+						<div class="card-body">
+							<div class="card-title">
+								Phu Hai Resort
+							</div>
+							<div class="card-price">
+								<small>Từ</small>
+								<span>
+									1.581.748 <sup>₫</sup>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<footer id="footer" class="bg-light">
-	<div class="footer-top py-4 border-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="footer-inner">
-						<div class="footer-logo mt-2 mb-3">
-							<a href="index.html">
-								<img src="./assets/images/logo.png" alt="">
-							</a>
-						</div>
-						<h3 class="text-uppercase">THIẾT KẾ WEBSITE THÔNG MINH, ỨNG DỤNG DI ĐỘNG - NENCER</h3>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="footer-inner">
-						<a class="toggled-footer" data-toggle="collapse" href="#footer01">
-							<h3 class="text-uppercase">
-								Chính sách
-							</h3>
-						</a>
-						<div class="footer-list collapse" id="footer01">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">
-										Về chúng tôi
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Quy định sử dụng
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Quyền riêng tư
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Thanh toán
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="footer-inner">
-						<a class="toggled-footer" data-toggle="collapse" href="#footer02">
-							<h3 class="text-uppercase">
-								Thông tin
-							</h3>
-						</a>
-						<div class="footer-list collapse" id="footer02">
-							<ul class="list-unstyled mb-0">
-								<li>
-									<a href="#">
-										Quà tặng
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Hướng dẫn sử dụng
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Video hướng dẫn
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										Vé hỗ trợ
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="footer-inner">
-						<h3 class="text-uppercase">Kết nối mxh</h3>
-						<div class="footer-social">
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start">
-								<li>
-									<a href="" class="facebook">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-								<li>
-									<a href="" class="twitter">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="" class="google">
-										<i class="fab fa-google"></i>
-									</a>
-								</li>
-								<li>
-									<a href="" class="youtube">
-										<i class="fab fa-youtube"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-bottom py-4 border-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="footer-inner">
-						<h3 class="text-uppercase">Trụ sở chính</h3>
-						<div class="footer-info">
-							<ul class="mb-0">
-								<li>
-									Số 35/45 Trần Thái Tông, Cầu Giấy, Hà Nội
-								</li>
-								<li>
-									Hỗ trợ: <b>(+84) 024 62 757 222</b> (Thứ 2 đến Thứ 7). Hotline: <b>0943793984</b>
-								</li>
-								<li>
-									Email: <b>*support@nencer.com*(+84)</b>
-								</li>
-								<li>
-									Bản quyền 2010-2020 Nencer JSC.,. Giữ toàn quyền.
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 mt-3 mt-md-0">
-					<div class="footer-inner">
-						<h3 class="text-uppercase">Văn phòng Hồ chí minh</h3>
-						<div class="footer-info">
-							<ul class="mb-0">
-								<li>
-									163/2A Trường Chinh, Phường Tân Hưng Thuận, Quận 12, TP HCM
-								</li>
-								<li>
-									Hỗ trợ: <b>0983973899</b>(Thứ 2 đến Thứ 6 từ 8h đến 18h; Thứ 7 từ 8h00 đến 17h00)
-								</li>
-								<li>
-									Email: <b>*sales@nencer.com*(+84)</b>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<a href="javascript:void(0)" id="return-to-top">
-	<i class="fas fa-angle-up"></i>
-</a>
+<footer></footer>
 
 <script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
 <script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
 <script type="text/javascript" src="./assets/js/theme-script.js"></script>
 
