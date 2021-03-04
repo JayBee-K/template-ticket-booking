@@ -535,14 +535,6 @@ header .language > ul > li:hover > a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0;
-    transform: scale(.98);
-    transition: .6s transform ease-in;
-}
-
-.block-banner .swiper-container .swiper-slide-active .swiper-image {
-    transform: scale(1);
-    opacity: 1;
 }
 
 .block-banner .swiper-container .swiper-slide .swiper-image .swiper-inner h3 {

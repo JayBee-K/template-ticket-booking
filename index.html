@@ -316,8 +316,9 @@
 												<div class="row no-gutters">
 													<div class="col-md-6">
 														<div class="inner position-relative p-3">
-															<label for="">Nơi đi</label>
-															<div class="d-flex align-items-center">
+															<label class="trigger-select" for="flightDeparture">Nơi
+																đi</label>
+															<div class="d-flex align-items-center box-inner">
 																<i class="fad fa-plane-departure color-main h6 mb-0"></i>
 																<select name="states[]" id="flightDeparture"
 																        class="flight-select form-control">
@@ -382,8 +383,8 @@
 													</div>
 													<div class="col-md-6">
 														<div class="inner inner-last position-relative p-3 pl-4">
-															<label for="">Nơi đến</label>
-															<div class="d-flex align-items-center">
+															<label class="trigger-select">Nơi đến</label>
+															<div class="d-flex align-items-center  box-inner">
 																<i class="fad fa-plane-arrival  color-main h6 mb-0"></i>
 																<select name="states[]" id="flightDestination"
 																        class="flight-select form-control">
@@ -446,8 +447,9 @@
 												<div class="row no-gutters">
 													<div class="col">
 														<div class="inner position-relative p-3">
-															<label for="">Ngày khởi hành</label>
-															<div class="d-flex align-items-center">
+															<label class="trigger-flat" data-calendar="1" for="">Ngày
+																khởi hành</label>
+															<div class="d-flex align-items-center box-inner">
 																<i class="fad fa-calendar-alt color-main h6 mb-0"></i>
 																<input type="text" placeholder="Chọn ngày khỏi hành"
 																       class="border-0 rounded-0 py-0 form-control form-date flatpickr flatpickr-input"
@@ -461,10 +463,9 @@
 												<div class="row no-gutters">
 													<div class="col-md-8">
 														<div class="inner position-relative p-3">
-															<label for="">Hành khách</label>
+															<label class="passenger-dropdown" for="">Hành khách</label>
 															<div class="d-flex align-items-center">
-																<div class="passenger-inner position-relative w-100"
-																     id="passenger-dropdown">
+																<div class="passenger-inner position-relative w-100 passenger-dropdown">
 																	<div class="dropdown overflow-hidden">
 					                                                    <span class="dropdown-toggle">
 					                                                        <span>
@@ -605,117 +606,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="block-intro bg-light border-bottom py-4">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="heading-block position-relative mb-4">
-						<h3 class="mb-0 py-2 font-weight-bold text-dark">Tại sao chọn VeDienTu</h3>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="row">
-						<div class="col-md-4 mb-4">
-							<div class="card bg-white p-3 card-intro">
-								<div class="card-header bg-transparent rounded-0 border-bottom-0">
-									<img src="./assets/images/intro/1.svg" alt="">
-								</div>
-								<div class="card-body text-center">
-									<div class="card-title">
-										Đơn giản hóa trải nghiệm đặt chỗ của bạn
-									</div>
-									<div class="card-text">
-										Cảm nhận sự linh hoạt và đơn giản trong suốt quá trình đặt chỗ của bạn
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 mb-4">
-							<div class="card bg-white  p-3 card-intro">
-								<div class="card-header bg-transparent rounded-0 border-bottom-0">
-									<img src="./assets/images/intro/2.svg" alt="">
-								</div>
-								<div class="card-body text-center">
-									<div class="card-title">
-										Hứng thú với Đặt chỗ địa phương trên toàn thế giới
-									</div>
-									<div class="card-text">
-										Trải nghiệm cảm giác thoải mái khi đặt chỗ bằng phương thức thanh toán, tiền tệ
-										và ngôn ngữ địa phương
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 mb-4">
-							<div class="card bg-white  p-3 card-intro">
-								<div class="card-header bg-transparent rounded-0 border-bottom-0">
-									<img src="./assets/images/intro/3.svg" alt="">
-								</div>
-								<div class="card-body text-center">
-									<div class="card-title">
-										Đa dạng sự lựa chọn để đi du lịch
-									</div>
-									<div class="card-text">
-										Tận hưởng những khoảnh khắc đáng nhớ với hàng triệu chuyến bay và chỗ ở thuận
-										thuận tiện
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 mb-4">
-							<div class="card bg-white  p-3 card-intro">
-								<div class="card-header bg-transparent rounded-0 border-bottom-0">
-									<img src="./assets/images/intro/4.svg" alt="">
-								</div>
-								<div class="card-body text-center">
-									<div class="card-title">
-										Ưu đãi độc quyền mỗi ngày
-									</div>
-									<div class="card-text">
-										Vô số chương trình khuyến mãi hàng ngày với giá cả cạnh tranh cho tất cả khách
-										du lịch
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 mb-4">
-							<div class="card bg-white  p-3 card-intro">
-								<div class="card-header bg-transparent rounded-0 border-bottom-0">
-									<img src="./assets/images/intro/5.svg" alt="">
-								</div>
-								<div class="card-body text-center">
-									<div class="card-title">
-										Nơi đặt chỗ trực tuyến chuyên nghiệp
-									</div>
-									<div class="card-text">
-										Cùng với các đối tác đáng tin cậy, chúng tôi đã đáp ứng vô số nhu cầu của khách
-										du lịch kể từ năm 2011
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 mb-4">
-							<div class="card bg-white p-3 card-intro">
-								<div class="card-header bg-transparent rounded-0 border-bottom-0">
-									<img src="./assets/images/intro/6.svg" alt="">
-								</div>
-								<div class="card-body text-center">
-									<div class="card-title">
-										Hỗ trợ khách hàng nhiệt tình
-									</div>
-									<div class="card-text">
-										Hỗ trợ tốt nhất, bộ phận hỗ trợ khách hàng của chúng tôi luôn sẵn sàng 24/7 bất
-										kể ngôn ngữ địa phương bạn sử dụng
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="block-recommended bg-white border-bottom py-4">
+	<div class="block-recommended bg-light  border-bottom py-4">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -878,6 +769,116 @@
 								</div>
 								<div class="card-action">
 									<i class="fal fa-arrow-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="block-intro bg-white border-bottom py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="heading-block position-relative mb-4">
+						<h3 class="mb-0 py-2 font-weight-bold text-dark">Tại sao chọn VeDienTu</h3>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row">
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/1.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Đơn giản hóa trải nghiệm đặt chỗ của bạn
+									</div>
+									<div class="card-text">
+										Cảm nhận sự linh hoạt và đơn giản trong suốt quá trình đặt chỗ của bạn
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/2.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Hứng thú với Đặt chỗ địa phương trên toàn thế giới
+									</div>
+									<div class="card-text">
+										Trải nghiệm cảm giác thoải mái khi đặt chỗ bằng phương thức thanh toán, tiền tệ
+										và ngôn ngữ địa phương
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/3.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Đa dạng sự lựa chọn để đi du lịch
+									</div>
+									<div class="card-text">
+										Tận hưởng những khoảnh khắc đáng nhớ với hàng triệu chuyến bay và chỗ ở thuận
+										thuận tiện
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/4.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Ưu đãi độc quyền mỗi ngày
+									</div>
+									<div class="card-text">
+										Vô số chương trình khuyến mãi hàng ngày với giá cả cạnh tranh cho tất cả khách
+										du lịch
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white  p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/5.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Nơi đặt chỗ trực tuyến chuyên nghiệp
+									</div>
+									<div class="card-text">
+										Cùng với các đối tác đáng tin cậy, chúng tôi đã đáp ứng vô số nhu cầu của khách
+										du lịch kể từ năm 2011
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="card bg-white p-3 card-intro">
+								<div class="card-header bg-transparent rounded-0 border-bottom-0">
+									<img src="./assets/images/intro/6.svg" alt="">
+								</div>
+								<div class="card-body text-center">
+									<div class="card-title">
+										Hỗ trợ khách hàng nhiệt tình
+									</div>
+									<div class="card-text">
+										Hỗ trợ tốt nhất, bộ phận hỗ trợ khách hàng của chúng tôi luôn sẵn sàng 24/7 bất
+										kể ngôn ngữ địa phương bạn sử dụng
+									</div>
 								</div>
 							</div>
 						</div>

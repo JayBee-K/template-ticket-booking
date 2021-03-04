@@ -121,7 +121,8 @@ $(document).ready(function () {
 			}
 		},
 	};
-	const dateDeparture = $("#date-departure").flatpickr(departureFlatpickrConfig);
+	dateDeparture = $("#date-departure").flatpickr(departureFlatpickrConfig);
+	
 	
 	let htmlRender = '';
 	let dateReturn = '';
@@ -129,8 +130,8 @@ $(document).ready(function () {
 		if ($('#choose-flight-02:checked').length > 0) {
 			htmlRender = `<div class="col">
 							<div class="inner inner-last position-relative p-3">
-								<label for="">Ngày trở về</label>
-								<div class="d-flex align-items-center">
+								<label class="trigger-flat" data-calendar="2" for="">Ngày trở về</label>
+								<div class="d-flex align-items-center box-inner">
 									<i class="fad fa-calendar-alt color-main h6 mb-0"></i>
 									<input type="text" placeholder="Departure Date"
 									       class="border-0 rounded-0 py-0 form-control form-date flatpickr flatpickr-input"
@@ -145,8 +146,14 @@ $(document).ready(function () {
 			htmlRender = ``;
 			$('.form-choose-date > .row > .col:nth-child(2)').remove();
 		}
-		
 	});
+	
+	$(document).on('click', '.trigger-flat', function () {
+		if($(this).data('calendar') == 1)
+			dateDeparture.open();
+		else
+			dateReturn.open();
+	})
 	
 	addEventCounterActions(
 		".passenger-event",
@@ -319,11 +326,15 @@ $(document).ready(function () {
 	}
 	
 	
-	$("#passenger-dropdown").click(function () {
+	$(".passenger-dropdown").click(function () {
 		$(".passenger-dropdown-content").fadeToggle();
 	});
 	
 	$("#passenger-close").click(function () {
 		$(".passenger-dropdown-content").fadeOut();
+	});
+	
+	$('.trigger-select').on("click", function () {
+		$(this).next('.box-inner').find('select').select2('open');
 	});
 });
