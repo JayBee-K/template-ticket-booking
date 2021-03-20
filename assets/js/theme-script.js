@@ -59,7 +59,7 @@ $(document).ready(function () {
 		}
 		let html = $(`<div class="d-flex align-items-center">
                         <div class="sel-icon">
-                            <i class="fal fa-plane-departure mb-0 h6"></i>
+                            <i class="fal ${attrElm.title.split("|")[3]} mb-0 h6"></i>
                         </div>
                         <div class="sel-content">
                             <div class="sel-title font-weight-bold">${attrElm.title.split("|")[0]}</div>
@@ -94,6 +94,7 @@ $(document).ready(function () {
 	const departureFlatpickrConfig = {
 		defaultDate: [Date.now()],
 		mode: "single",
+		locale: "vn",
 		altInput: true,
 		altFormat: altFormat,
 		showMonths: $(".mobie-DepartureDatepicker").length === 0 ? 2 : 1,
@@ -106,6 +107,7 @@ $(document).ready(function () {
 	const returnFlatpickrConfig = {
 		defaultDate: [Date.now()],
 		mode: "single",
+		locale: "vn",
 		altInput: true,
 		altFormat: altFormat,
 		showMonths: $(".mobie-ReturnDatepicker").length === 0 ? 2 : 1,
