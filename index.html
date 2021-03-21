@@ -212,10 +212,51 @@
 	<div class="container">
 		<div class="row align-items-lg-center">
 			<div class="col-lg-2">
+				<div class="d-flex align-items-center justify-content-between">
 				<div class="logo">
 					<a class="d-inline-block" href="index.html">
 						<img src="./assets/images/logo.png" alt="">
 					</a>
+				</div>
+				<div class="user d-block d-lg-none">
+					<div class="action d-flex align-items-center justify-content-lg-end justify-content-start">
+						<a href="#modalLogin" class="btn btn-customize" data-toggle="modal">
+							<span class="text">Đăng nhập</span>
+							<span class="icon"><i class="fal fa-sign-in-alt"></i></span>
+						</a>
+					</div>
+					<div class="action-user d-none align-items-center justify-content-lg-end justify-content-start py-2">
+						<a href="javascript:void(0)">
+									<span>
+										Tài khoản
+									</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="javascript:void(0)">
+											<span>
+												Thông tin tài khoản
+											</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+											<span>
+												Đổi mật khẩu
+											</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+											<span>
+												Đăng xuất
+											</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 				</div>
 			</div>
 			<div class="col-lg-7">
@@ -270,7 +311,7 @@
 			<div class="col-lg-3">
 				<div class="bg-mobile">
 					<div class="row row-5 align-items-center">
-						<div class="col-lg-5 col-3">
+						<div class="col-lg-5 col-6">
 							<div class="language d-flex align-items-center justify-content-lg-end justify-content-start py-2">
 								<a href="javascript:void(0)">
 								<span>
@@ -331,7 +372,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-7 col-6">
+						<div class="col-lg-7 col-6 d-none d-lg-block">
 							<div class="action d-flex align-items-center justify-content-lg-end justify-content-start">
 								<a href="#modalLogin" class="btn btn-customize" data-toggle="modal">
 									<span class="text">Đăng nhập</span>
@@ -370,7 +411,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-3 d-block d-lg-none">
+						<div class="col-6 d-block d-lg-none">
 							<div class="hamburger" id="hamburger">
 								<span></span>
 							</div>
@@ -384,7 +425,7 @@
 </header>
 <div class="main">
 	<div class="block-banner position-relative">
-		<div class="swiper-container" id="swiper-banner">
+		<div class="swiper-container d-none d-lg-block" id="swiper-banner">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<div class="swiper-image" style="background-image: url('./assets/images/banner/bg-1.jpg')">
