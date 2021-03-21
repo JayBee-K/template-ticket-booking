@@ -39,6 +39,8 @@
 		:root {
 			--color-main: #065cab;
 			--color-hover: #02325f;
+			--bg-main: #f7faff;
+			--bg-light: #F7F7F7;
 			--text-dark: #343a40;
 			--text-gray: #6c757d;
 			--text-gray-50: #a4a9ae;
@@ -49,43 +51,157 @@
 <body>
 <div class="template-2-popupTheme">
 	<div class="modal fade" id="modalLogin" tabindex="-1">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog">
 			<div class="modal-content bg-transparent rounded-0 border-0">
 				<div class="modal-body p-0">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-7">
-								<div class="modal-inner bg-white px-4 py-3">
-									<div class="heading">
-										<span>Đăng nhập</span> để đặt vé với giá ưu đãi
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng nhập</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
 									</div>
-									<div class="d-flex align-items-center justify-content-center my-4">
-										<a href="javascript:void(0)" class="btn-social btn-facebook">
-											<i class="fab fa-facebook-f"></i>
-											Facebook
-										</a>
-										<button type="button" class="btn-social btn-google">
-											<i class="fab fa-google-plus-g"></i>
-											Google
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng nhập
+										</button>
+										<a href="javascript:void(0)" data-modal="modalForgot"
+										   class="text-muted callModal">Quên mật khẩu?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Nếu chưa có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalRegister">Click vào đây để đăng ký</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng ký</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Re-Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-address-card"></i></label>
+										<input type="text" class="form-control" placeholder="Full name">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-phone-alt"></i></label>
+										<input type="tel" class="form-control" placeholder="Number phone">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
 										</button>
 									</div>
-									<div class="divider"><span>Hoặc</span></div>
-									<div class="form my-4">
-										<form action="">
-											<div class="form-group">
-												<label for=""><i class="fas fa-envelope"></i></label>
-												<input type="email" class="form-control" placeholder="Email">
-											</div>
-											<div class="form-group">
-												<label for=""><i class="fas fa-clock"></i></label>
-												<input type="password" class="form-control" placeholder="Password">
-											</div>
-										</form>
-									</div>
-								</div>
+								</form>
 							</div>
-							<div class="col-md-5"></div>
 						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Đã có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalLogin">Click vào đây để đăng nhập</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Quên mật khẩu</span>
+							</div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -321,7 +437,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="card border-0 bg-transparent card-search">
+						<div class="card border-0 bg-transparent card-search template-2-tab">
 							<div class="card-header rounded-0 p-0 bg-transparent">
 								<ul class="nav nav-tabs border-bottom-0" id="tab-booking">
 									<li class="nav-item">
@@ -516,14 +632,12 @@
 													</div>
 												</div>
 											</div>
-											<div class="position-relative form-inner rounded">
-												<div class="row no-gutters">
-													<div class="col-md-8">
-														<div class="inner position-relative p-3">
-															<label class="passenger-dropdown" for="">Hành khách</label>
-															<div class="d-flex align-items-center">
-																<div class="passenger-inner position-relative w-100 passenger-dropdown">
-																	<div class="dropdown overflow-hidden">
+											<div class="position-relative form-inner form-choose-people rounded">
+												<div class="inner position-relative p-3">
+													<label class="passenger-dropdown" for="">Hành khách</label>
+													<div class="d-flex align-items-center">
+														<div class="passenger-inner position-relative w-100 passenger-dropdown">
+															<div class="dropdown overflow-hidden">
 					                                                    <span class="dropdown-toggle">
 					                                                        <span>
 					                                                            <span id="total-people">1</span> hành khách
@@ -531,100 +645,98 @@
 					                                                                   id="value-passenger" value="1"/>
 					                                                        </span>
 					                                                    </span>
+															</div>
+														</div>
+													</div>
+													<div class="passenger-dropdown-content"
+													     style="display: none">
+														<div class="passenger-dropdown-container">
+															<div class="border-bottom">
+																<div class="passenger-title bg-light p-3 d-flex align-items-center justify-content-between">
+																	<div class="h6 font-weight-bold mb-0">Hành
+																		khách
+																	</div>
+																	<div id="passenger-close">
+																		<i class="fal fa-times"></i>
 																	</div>
 																</div>
 															</div>
-															<div class="passenger-dropdown-content"
-															     style="display: none">
-																<div class="passenger-dropdown-container">
-																	<div class="border-bottom">
-																		<div class="passenger-title bg-light p-3 d-flex align-items-center justify-content-between">
-																			<div class="h6 font-weight-bold mb-0">Hành
-																				khách
+															<div class="passenger-dropdown-container">
+																<div class="passenger-dropdown-list">
+																	<div class="passenger-list-item py-2 px-3 d-flex justify-content-between align-items-center">
+																		<div class="passenger-list-item-left">
+																			<div class="passenger-list-item-title">
+																				Người lớn
 																			</div>
-																			<div id="passenger-close">
-																				<i class="fal fa-times"></i>
+																			<div class="passenger-list-item-subtitle">
+																				> 13 tuổi
+																			</div>
+																		</div>
+																		<div class="passenger-list-item-right">
+																			<div class="passenger-event d-flex align-items-center">
+																				<div class="passenger-minus passenger-circle">
+																					<i class="fal fa-minus"></i>
+																				</div>
+																				<div class="passenger-counter">
+																					1
+																				</div>
+																				<input type="hidden" value="1"
+																				       name="value-count-adult"
+																				       class="value-passenger-counter"/>
+																				<div class="passenger-plus passenger-circle">
+																					<i class="fal fa-plus"></i>
+																				</div>
 																			</div>
 																		</div>
 																	</div>
-																	<div class="passenger-dropdown-container">
-																		<div class="passenger-dropdown-list">
-																			<div class="passenger-list-item py-2 px-3 d-flex justify-content-between align-items-center">
-																				<div class="passenger-list-item-left">
-																					<div class="passenger-list-item-title">
-																						Người lớn
-																					</div>
-																					<div class="passenger-list-item-subtitle">
-																						> 13 tuổi
-																					</div>
+																	<div class="passenger-list-item py-2 px-3 d-flex justify-content-between align-items-center">
+																		<div class="passenger-list-item-left">
+																			<div class="passenger-list-item-title">
+																				Children
+																			</div>
+																			<div class="passenger-list-item-subtitle">
+																				2-12 tuổi
+																			</div>
+																		</div>
+																		<div class="passenger-list-item-right">
+																			<div class="passenger-event d-flex align-items-center">
+																				<div class="passenger-minus passenger-circle disabled">
+																					<i class="fal fa-minus"></i>
 																				</div>
-																				<div class="passenger-list-item-right">
-																					<div class="passenger-event d-flex align-items-center">
-																						<div class="passenger-minus passenger-circle">
-																							<i class="fal fa-minus"></i>
-																						</div>
-																						<div class="passenger-counter">
-																							1
-																						</div>
-																						<input type="hidden" value="1"
-																						       name="value-count-adult"
-																						       class="value-passenger-counter"/>
-																						<div class="passenger-plus passenger-circle">
-																							<i class="fal fa-plus"></i>
-																						</div>
-																					</div>
+																				<div class="passenger-counter">
+																					0
+																				</div>
+																				<input type="hidden" value="0"
+																				       name="value-count-child"
+																				       class="value-passenger-counter "/>
+																				<div class="passenger-plus passenger-circle">
+																					<i class="fal fa-plus"></i>
 																				</div>
 																			</div>
-																			<div class="passenger-list-item py-2 px-3 d-flex justify-content-between align-items-center">
-																				<div class="passenger-list-item-left">
-																					<div class="passenger-list-item-title">
-																						Children
-																					</div>
-																					<div class="passenger-list-item-subtitle">
-																						2-12 tuổi
-																					</div>
-																				</div>
-																				<div class="passenger-list-item-right">
-																					<div class="passenger-event d-flex align-items-center">
-																						<div class="passenger-minus passenger-circle disabled">
-																							<i class="fal fa-minus"></i>
-																						</div>
-																						<div class="passenger-counter">
-																							0
-																						</div>
-																						<input type="hidden" value="0"
-																						       name="value-count-child"
-																						       class="value-passenger-counter "/>
-																						<div class="passenger-plus passenger-circle">
-																							<i class="fal fa-plus"></i>
-																						</div>
-																					</div>
-																				</div>
+																		</div>
+																	</div>
+																	<div class="passenger-list-item py-2 px-3 d-flex justify-content-between align-items-center">
+																		<div class="passenger-list-item-left">
+																			<div class="passenger-list-item-title">
+																				Baby
 																			</div>
-																			<div class="passenger-list-item py-2 px-3 d-flex justify-content-between align-items-center">
-																				<div class="passenger-list-item-left">
-																					<div class="passenger-list-item-title">
-																						Baby
-																					</div>
-																					<div class="passenger-list-item-subtitle">
-																						< 2 tuổi
-																					</div>
+																			<div class="passenger-list-item-subtitle">
+																				< 2 tuổi
+																			</div>
+																		</div>
+																		<div class="passenger-list-item-right">
+																			<div class="passenger-event d-flex align-items-center">
+																				<div class="passenger-minus passenger-circle disabled">
+																					<i class="fal fa-minus"></i>
 																				</div>
-																				<div class="passenger-list-item-right">
-																					<div class="passenger-event d-flex align-items-center">
-																						<div class="passenger-minus passenger-circle disabled">
-																							<i class="fal fa-minus"></i>
-																						</div>
-																						<div class="passenger-counter">
-																							0
-																						</div>
-																						<input type="hidden" value="0"
-																						       name="value-count-baby"
-																						       class="value-passenger-counter value-count-baby"/>
-																						<div class="passenger-plus passenger-circle">
-																							<i class="fal fa-plus"></i>
-																						</div>
-																					</div>
+																				<div class="passenger-counter">
+																					0
+																				</div>
+																				<input type="hidden" value="0"
+																				       name="value-count-baby"
+																				       class="value-passenger-counter value-count-baby"/>
+																				<div class="passenger-plus passenger-circle">
+																					<i class="fal fa-plus"></i>
 																				</div>
 																			</div>
 																		</div>
@@ -633,18 +745,9 @@
 															</div>
 														</div>
 													</div>
-													<!--
-													<div class="col-md-4">
-														<div class="inner-button">
-															<button class="btn btn-primary">
-																<i class="fal fa-search"></i>
-															</button>
-														</div>
-													</div>
-													-->
 												</div>
 											</div>
-											<div class="position-relative inner-button text-center mt-5">
+											<div class="position-relative form-choose-button inner-button text-center mt-5">
 												<button type="submit" class="btn btn-customize">
 													<span class="text">Đặt vé ngay</span>
 													<span class="icon"><i class="fad fa-hand-point-up"></i></span>

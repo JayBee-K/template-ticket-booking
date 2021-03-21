@@ -151,7 +151,7 @@ $(document).ready(function () {
 	});
 	
 	$(document).on('click', '.trigger-flat', function () {
-		if($(this).data('calendar') == 1)
+		if ($(this).data('calendar') == 1)
 			dateDeparture.open();
 		else
 			dateReturn.open();
@@ -339,4 +339,61 @@ $(document).ready(function () {
 	$('.trigger-select').on("click", function () {
 		$(this).next('.box-inner').find('select').select2('open');
 	});
+	
+	$(document).on("click", ".callModal", function () {
+		$('.modal').modal('hide');
+		$('#' + $(this).data('modal')).modal('show');
+		setTimeout(function () {
+			$('body').addClass('modal-open');
+		}, 500)
+	});
+	
+	$(document).on('click', '.callSort', function () {
+		callSort($(this));
+	});
+	
+	function callSort(elm) {
+		if (elm.next('.dropdown-sort').hasClass('sort-show'))
+			elm.next('.dropdown-sort').removeClass('sort-show');
+		else
+			elm.next('.dropdown-sort').addClass('sort-show');
+	}
+	
+	$(document).on("mouseup", function (e) {
+		var o = $(".flight-sort");
+		o.is(e.target) || 0 !== o.has(e.target).length || (
+			$(".flight-sort .dropdown-sort").removeClass("sort-show"))
+	});
+	
+	
+	$(document).on('click', '.callFilter', function () {
+		callFilter($(this));
+	});
+	
+	function callFilter(elm) {
+		// $(".flight-filter .item .dropdown-filter").removeClass("filter-show");
+		if (elm.next('.dropdown-filter').hasClass('filter-show'))
+			elm.next('.dropdown-filter').removeClass('filter-show');
+		else
+			elm.next('.dropdown-filter').addClass('filter-show');
+	}
+	
+	$(document).on("mouseup", function (e) {
+		var o = $(".flight-filter .item");
+		o.is(e.target) || 0 !== o.has(e.target).length || (
+			o.find('.dropdown-filter').removeClass("filter-show"))
+	});
+	
+	$('#checkflight-all').click(function () {
+		if ($(this).prop('checked'))
+			$(this).closest('.filter-inner').find('.checkflight').prop('checked', true);
+		else
+			$(this).closest('.filter-inner').find('.checkflight').prop('checked', false);
+	});
+	
+	
+	setTimeout(function () {
+		$(".flight-result .placeholder-loading--show").removeClass("placeholder-loading--show");
+		$(".flight-result .d-none").removeClass("d-none");
+	}, 3000);
 });

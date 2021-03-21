@@ -39,12 +39,175 @@
 		:root {
 			--color-main: #065cab;
 			--color-hover: #02325f;
+			--bg-main: #f7faff;
+			--bg-light: #F7F7F7;
 			--text-dark: #343a40;
 			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+			--color-border: #e9e9e9;
 		}
 	</style>
 </head>
 <body>
+<div class="template-2-popupTheme">
+	<div class="modal fade" id="modalLogin" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng nhập</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng nhập
+										</button>
+										<a href="javascript:void(0)" data-modal="modalForgot"
+										   class="text-muted callModal">Quên mật khẩu?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Nếu chưa có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalRegister">Click vào đây để đăng ký</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng ký</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Re-Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-address-card"></i></label>
+										<input type="text" class="form-control" placeholder="Full name">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-phone-alt"></i></label>
+										<input type="tel" class="form-control" placeholder="Number phone">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Đã có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalLogin">Click vào đây để đăng nhập</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Quên mật khẩu</span>
+							</div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <header class="border-bottom bg-white shadow-sm position-relative">
 	<div class="container">
 		<div class="row align-items-lg-center">
@@ -220,258 +383,233 @@
 	<div class="header-overlay"></div>
 </header>
 <div class="main">
-	<div class="block-banner position-relative">
-		<div class="swiper-container" id="swiper-banner">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="swiper-image" style="background-image: url('./assets/images/banner/bg-1.jpg')">
-						<div class="swiper-inner h-100 d-flex align-items-center">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<h3 class="text-white text-capitalize font-weight-bold mb-0">
-											Experience the best trip ever
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-image" style="background-image: url('./assets/images/banner/bg-2.jpg')">
-						<div class="swiper-inner h-100 d-flex align-items-center">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<h3 class="text-white text-capitalize font-weight-bold mb-0">
-											Making the most out of your holiday
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-image" style="background-image: url('./assets/images/banner/bg-3.jpg')">
-						<div class="swiper-inner h-100 d-flex align-items-center">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<h3 class="text-white text-capitalize font-weight-bold mb-0">
-											Travel operator just for you
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
+	<div class="template-2-breadcrumb overflow-hidden">
+		<div class="video">
+			<video autoplay muted loop>
+				<source src="assets/images/video-background.mp4">
+			</video>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="inner">
+						Tìm chuyến bay
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="block-form position-absolute">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="card border-0 bg-transparent card-search">
-							<div class="card-header rounded-0 p-0 bg-transparent">
-								<ul class="nav nav-tabs border-bottom-0" id="tab-booking">
-									<li class="nav-item">
-										<a class="nav-link active mb-0 border-0" data-toggle="tab"
-										   href="#tab-booking-01">
-												<span class="font-weight-bold d-block">
-													<i class="fal fa-plane"></i>
-													Chuyến bay
-												</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link mb-0 border-0" data-toggle="tab"
-										   href="#tab-booking-02">
-												<span class="font-weight-bold d-block">
-													<i class="fal fa-plane"></i>
-													Chuyến bay 02
-												</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="card-body p-3 bg-white">
-								<div class="tab-content" id="myTabContent">
-									<div class="tab-pane fade show active" id="tab-booking-01">
-										<form action="" class="mb-0">
-											<div class="position-relative form-inner-radio mb-3">
-												<div class="row no-gutters">
-													<div class="col-md-12">
-														<div class="custom-control custom-radio custom-control-inline">
-															<input type="radio" id="choose-flight-01"
-															       name="choose-flight" checked
-															       class="custom-control-input">
-															<label class="custom-control-label"
-															       for="choose-flight-01">Một chiều</label>
-														</div>
-														<div class="custom-control custom-radio custom-control-inline">
-															<input type="radio" id="choose-flight-02"
-															       name="choose-flight"
-															       class="custom-control-input">
-															<label class="custom-control-label"
-															       for="choose-flight-02">Chuyến khứ hồi</label>
-														</div>
-													</div>
+	</div>
+	<div class="template-2-page-search template-2-tab">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="tab-search">
+						<ul class="nav nav-tabs border-bottom-0" id="tab-booking">
+							<li class="nav-item">
+								<a class="nav-link active mb-0 border-0" data-toggle="tab"
+								   href="#tab-booking-01">
+											<span class="font-weight-bold d-block">
+												<i class="fal fa-plane"></i>
+												Chuyến bay
+											</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link mb-0 border-0" data-toggle="tab"
+								   href="#tab-booking-02">
+									<span class="font-weight-bold d-block">
+										<i class="fal fa-plane"></i>
+										Chuyến bay 02
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="py-lg-4 px-lg-0 bg-white p-3">
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="tab-booking-01">
+								<form action="" class="mb-0">
+									<div class="position-relative form-inner-radio mb-3">
+										<div class="row no-gutters">
+											<div class="col-md-12">
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="choose-flight-01"
+													       name="choose-flight" checked
+													       class="custom-control-input">
+													<label class="custom-control-label"
+													       for="choose-flight-01">Một chiều</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+													<input type="radio" id="choose-flight-02"
+													       name="choose-flight"
+													       class="custom-control-input">
+													<label class="custom-control-label"
+													       for="choose-flight-02">Chuyến khứ hồi</label>
 												</div>
 											</div>
-											<div class="position-relative form-inner form-choose-address rounded">
-												<div class="row no-gutters">
-													<div class="col-md-6">
-														<div class="inner position-relative p-3">
-															<label class="trigger-select" for="flightDeparture">Nơi
-																đi</label>
-															<div class="d-flex align-items-center box-inner">
-																<i class="fad fa-plane-departure color-main h6 mb-0"></i>
-																<select name="states[]" id="flightDeparture"
-																        class="flight-select form-control">
-																	<option value=""></option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
-																		Yogyakarta (JOGC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
-																		Yogyakarta (JOGC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
-																		Yogyakarta (JOGC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
-																		Yogyakarta (JOGC)
-																	</option>
-																</select>
+										</div>
+									</div>
+									<div class="row no-gutters">
+										<div class="col-lg-11">
+											<div class="row no-gutters">
+												<div class="col-lg-5">
+													<div class="position-relative form-inner form-choose-address">
+														<div class="row no-gutters">
+															<div class="col-md-6">
+																<div class="inner position-relative p-3">
+																	<label class="trigger-select" for="flightDeparture">Nơi
+																		đi</label>
+																	<div class="d-flex align-items-center box-inner">
+																		<i class="fad fa-plane-departure color-main h6 mb-0"></i>
+																		<select name="states[]" id="flightDeparture"
+																		        class="flight-select form-control">
+																			<option value=""></option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
+																				Yogyakarta (JOGC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
+																				Yogyakarta (JOGC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
+																				Yogyakarta (JOGC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-departure">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-departure">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-departure">
+																				Yogyakarta (JOGC)
+																			</option>
+																		</select>
+																	</div>
+																</div>
 															</div>
-														</div>
-													</div>
-													<div class="inner-icon">
-														<a href="javascript:void(0)" class="form-icon"
-														   id="changeFlight">
-															<i class="fal fa-exchange"></i>
-														</a>
-													</div>
-													<div class="col-md-6">
-														<div class="inner inner-last position-relative p-3 pl-4">
-															<label class="trigger-select">Nơi đến</label>
-															<div class="d-flex align-items-center  box-inner">
-																<i class="fad fa-plane-arrival  color-main h6 mb-0"></i>
-																<select name="states[]" id="flightDestination"
-																        data-key="1"
-																        class="flight-select form-control">
-																	<option value=""></option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
-																		Yogyakarta (JOGC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
-																		Yogyakarta (JOGC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
-																		Yogyakarta (JOGC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
-																		Jakarta (SUBC)
-																	</option>
-																	<option value="SUBC"
-																	        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
-																		Surabaya (SUBC)
-																	</option>
-																	<option value="JOGC"
-																	        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
-																		Yogyakarta (JOGC)
-																	</option>
-																</select>
+															<div class="inner-icon">
+																<a href="javascript:void(0)" class="form-icon"
+																   id="changeFlight">
+																	<i class="fal fa-exchange"></i>
+																</a>
 															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="position-relative form-inner form-choose-date rounded">
-												<div class="row no-gutters">
-													<div class="col">
-														<div class="inner position-relative p-3">
-															<label class="trigger-flat" data-calendar="1" for="">Ngày
-																khởi hành</label>
-															<div class="d-flex align-items-center box-inner">
-																<i class="fad fa-calendar-alt color-main h6 mb-0"></i>
-																<input type="text" placeholder="Chọn ngày khỏi hành"
-																       class="border-0 rounded-0 py-0 form-control form-date flatpickr flatpickr-input"
-																       id="date-departure"/>
+															<div class="col-md-6">
+																<div class="inner inner-last position-relative p-3 pl-4">
+																	<label class="trigger-select">Nơi đến</label>
+																	<div class="d-flex align-items-center  box-inner">
+																		<i class="fad fa-plane-arrival  color-main h6 mb-0"></i>
+																		<select name="states[]" id="flightDestination"
+																		        data-key="1"
+																		        class="flight-select form-control">
+																			<option value=""></option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
+																				Yogyakarta (JOGC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
+																				Yogyakarta (JOGC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
+																				Yogyakarta (JOGC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Jakarta, Indonesia|Jakarta|SUBC|fa-plane-arrival">
+																				Jakarta (SUBC)
+																			</option>
+																			<option value="SUBC"
+																			        title="Surabaya, Indonesia|Surabaya|SUBC|fa-plane-arrival">
+																				Surabaya (SUBC)
+																			</option>
+																			<option value="JOGC"
+																			        title="Yogyakarta, Indonesia|Yogyakarta|JOGC|fa-plane-arrival">
+																				Yogyakarta (JOGC)
+																			</option>
+																		</select>
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="position-relative form-inner rounded">
-												<div class="row no-gutters">
-													<div class="col-md-8">
+												<div class="col-lg-5">
+													<div class="position-relative form-inner form-choose-date">
+														<div class="row no-gutters">
+															<div class="col">
+																<div class="inner position-relative p-3">
+																	<label class="trigger-flat" data-calendar="1"
+																	       for="">Ngày
+																		khởi hành</label>
+																	<div class="d-flex align-items-center box-inner">
+																		<i class="fad fa-calendar-alt color-main h6 mb-0"></i>
+																		<input type="text"
+																		       placeholder="Chọn ngày khỏi hành"
+																		       class="border-0 rounded-0 py-0 form-control form-date flatpickr flatpickr-input"
+																		       id="date-departure"/>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-2">
+													<div class="position-relative form-inner form-choose-people">
 														<div class="inner position-relative p-3">
 															<label class="passenger-dropdown" for="">Hành khách</label>
 															<div class="d-flex align-items-center">
@@ -586,27 +724,1084 @@
 															</div>
 														</div>
 													</div>
-													<!--
-													<div class="col-md-4">
-														<div class="inner-button">
-															<button class="btn btn-primary">
-																<i class="fal fa-search"></i>
-															</button>
-														</div>
-													</div>
-													-->
 												</div>
 											</div>
-											<div class="position-relative inner-button text-center mt-5">
+										</div>
+										<div class="col-lg-1">
+											<div class="position-relative form-choose-button inner-button text-center d-none d-lg-block">
+												<button type="submit" class="btn btn-search">
+													<i class="fal fa-search"></i>
+												</button>
+											</div>
+											<div class="position-relative form-choose-button inner-button text-center mt-5 d-block d-lg-none">
 												<button type="submit" class="btn btn-customize">
 													<span class="text">Đặt vé ngay</span>
 													<span class="icon"><i class="fad fa-hand-point-up"></i></span>
 												</button>
 											</div>
-										</form>
+										</div>
 									</div>
-									<div class="tab-pane fade" id="tab-booking-02">
-									
+								</form>
+							</div>
+							<div class="tab-pane fade" id="tab-booking-02">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-2-page-inner bg-light py-4">
+		<div class="container">
+			<div class="bg-white rounded shadow-sm border">
+				<div class="flight-inner-sort p-3">
+					<div class="row align-items-lg-end">
+						<div class="col-lg-8">
+							<div class="flight-content">
+								<div class="heading">
+									Chuyến bay từ Hà Nội đến Tp.Hồ Chí Minh (Bao gồm vé khứ hồi)
+								</div>
+								<div class="desc">
+									<ul class="list-unstyled mb-0">
+										<li>Ngày bay: 21 tháng 03 năm 2021</li>
+										<li>Số khách: 1 hành khách</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="flight-sort">
+								Sắp xếp:
+								<a href="javascript:void(0)" class="callSort">
+									Giá thấp nhất <i class="fal fa-angle-down"></i>
+								</a>
+								<div class="dropdown-sort">
+									<ul class="list-unstyled mb-0">
+										<li class="active">
+											<a href="javascript:void(0)">Giá thấp nhất</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Giá cao nhật</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Giờ khởi hành</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Giờ đến</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Thời hạn</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flight-inner--filter border-top p-3">
+					<div class="row">
+						<div class="col-12">
+							<div class="flight-filter">
+								<p class="mb-0 mr-2">
+									Bộ lọc:
+								</p>
+								<div class="item">
+									<a href="javascript:void(0)" class="callFilter">
+										Thời gian bay <i class="fal fa-angle-down"></i>
+									</a>
+									<div class="dropdown-filter">
+										<p>Số điểm dừng: </p>
+										<div class="filter-inner">
+											<div class="filter-item">
+												<input type="checkbox" id="checkitem0" value="0">
+												<label for="checkitem0">Bay thẳng</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checkitem1" value="1">
+												<label for="checkitem1">1 điểm dừng</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checkitem2" value="2">
+												<label for="checkitem2">2 điểm dừng</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checkitem3" value="3">
+												<label for="checkitem3">1 điểm dừng</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checkitem4" value="4">
+												<label for="checkitem4">4 điểm dừng</label>
+											</div>
+										</div>
+										<hr>
+										<p>Thời gian dừng: </p>
+										<div class="filter-inner">
+											<div class="py-2 px-2">
+												<input type="text" class="form-control"
+												       placeholder="Thời gian chờ tối thiểu: 2 hours">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<a href="javascript:void(0)" class="callFilter">
+										Điểm dừng <i class="fal fa-angle-down"></i>
+									</a>
+									<div class="dropdown-filter">
+										<p>Giờ cất cánh: </p>
+										<div class="filter-inner">
+											<div class="filter-item">
+												<input type="checkbox" id="checktime0" value="0">
+												<label for="checktime0">00:00 - 06:00</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checktime1" value="1">
+												<label for="checktime1">06:00 - 12:00</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checktime2" value="2">
+												<label for="checktime2">12:00 - 18:00</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checktime3" value="3">
+												<label for="checktime3">18:00 - 00:00</label>
+											</div>
+										</div>
+										<hr>
+										<p>Giờ hạ cánh: </p>
+										<div class="filter-inner">
+											<div class="filter-item">
+												<input type="checkbox" id="checktime00" value="0">
+												<label for="checktime00">00:00 - 06:00</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checktime01" value="1">
+												<label for="checktime01">06:00 - 12:00</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checktime02" value="2">
+												<label for="checktime02">12:00 - 18:00</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checktime03" value="3">
+												<label for="checktime03">18:00 - 00:00</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<a href="javascript:void(0)" class="callFilter">
+										Hãng hàng không <i class="fal fa-angle-down"></i>
+									</a>
+									<div class="dropdown-filter">
+										<p>Giờ cất cánh: </p>
+										<div class="filter-inner">
+											<div class="filter-item">
+												<input type="checkbox" class="checkflight" id="checkflight-all"
+												       value="0">
+												<label for="checkflight-all">Chọn tất cả</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" class="checkflight" id="checkflight-1" value="1">
+												<label for="checkflight-1">Bamboo Airways</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" class="checkflight" id="checkflight-2" value="2">
+												<label for="checkflight-2">VietJet Air</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" class="checkflight" id="checkflight-3" value="3">
+												<label for="checkflight-3">Vietnam Airlines</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<a href="javascript:void(0)" class="callFilter">
+										Hạng vé <i class="fal fa-angle-down"></i>
+									</a>
+									<div class="dropdown-filter">
+										<p>Giờ cất cánh: </p>
+										<div class="filter-inner">
+											<div class="filter-item">
+												<input type="checkbox" id="checkticket0" value="0">
+												<label for="checkticket0">Hạng thương gia</label>
+											</div>
+											<div class="filter-item">
+												<input type="checkbox" id="checkticket1" value="1">
+												<label for="checkticket1">Hạng phổ thông</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-white rounded shadow-sm border my-4">
+				<div class="flight-order">
+					<div class="row">
+						<div class="col-12">
+							<div class="top">
+								<div class="inner d-flex align-items-center justify-content-between p-3">
+									<div class="title font-weight-bold h6 mb-0">
+										<i class="fad fa-plane-departure color-main h6 mb-0 mr-1"></i> Hà Nội <i
+											class="fad fa-long-arrow-right mx-3"></i> Hồ Chí Minh
+									</div>
+									<div class="time text-muted mb-0">
+										21 tháng 03 năm 2021
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<ul class="list-unstyled mb-0 d-flex align-items-center">
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">22-03</span>
+											<span class="text">Thứ Hai</span>
+										</a>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0)">
+											<span class="day">23-03</span>
+											<span class="text">Thứ Ba</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">24-03</span>
+											<span class="text">Thứ Tư</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">25-03</span>
+											<span class="text">Thứ Năm</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">26-03</span>
+											<span class="text">Thứ Sáu</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">27-03</span>
+											<span class="text">Thứ Bảy</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">28-03</span>
+											<span class="text">Chủ Nhật</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">29-03</span>
+											<span class="text">Thứ Hai</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">30-03</span>
+											<span class="text">Thứ Ba</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">31-03</span>
+											<span class="text">Thứ Tư</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="flight-result border-top">
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="order-multi bg-white rounded shadow-sm border my-4">
+				<div class="flight-order">
+					<div class="row no-gutters">
+						<div class="col-6">
+							<div class="top">
+								<div class="inner d-flex align-items-center justify-content-between p-3">
+									<div class="title font-weight-bold h6 mb-0">
+										<i class="fad fa-plane-departure color-main h6 mb-0 mr-1"></i> Hà Nội <i
+											class="fad fa-long-arrow-right mx-3"></i> Hồ Chí Minh
+									</div>
+									<div class="time text-muted mb-0">
+										21 tháng 03 năm 2021
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<ul class="list-unstyled mb-0 d-flex align-items-center">
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">22-03</span>
+											<span class="text">Thứ Hai</span>
+										</a>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0)">
+											<span class="day">23-03</span>
+											<span class="text">Thứ Ba</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">24-03</span>
+											<span class="text">Thứ Tư</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">25-03</span>
+											<span class="text">Thứ Năm</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">26-03</span>
+											<span class="text">Thứ Sáu</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">27-03</span>
+											<span class="text">Thứ Bảy</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">28-03</span>
+											<span class="text">Chủ Nhật</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="top">
+								<div class="inner d-flex align-items-center justify-content-between p-3">
+									<div class="title font-weight-bold h6 mb-0">
+										<i class="fad fa-plane-arrival color-main h6 mb-0 mr-1"></i> Hồ Chí Minh <i
+											class="fad fa-long-arrow-right mx-3"></i> Hà Nội
+									</div>
+									<div class="time text-muted mb-0">
+										21 tháng 03 năm 2021
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<ul class="list-unstyled mb-0 d-flex align-items-center">
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">22-03</span>
+											<span class="text">Thứ Hai</span>
+										</a>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0)">
+											<span class="day">23-03</span>
+											<span class="text">Thứ Ba</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">24-03</span>
+											<span class="text">Thứ Tư</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">25-03</span>
+											<span class="text">Thứ Năm</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">26-03</span>
+											<span class="text">Thứ Sáu</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">27-03</span>
+											<span class="text">Thứ Bảy</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span class="day">28-03</span>
+											<span class="text">Chủ Nhật</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="flight-result border-top">
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-logo">
+											<img class="placeholder-loading--show placeholder-image"
+											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
+											     alt="">
+											<img src="./assets/images/VN.webp"
+											     alt="Vietnam Airlines" class="d-none">
+											<div class="placeholder-loading--show placeholder-loading"></div>
+											<div class="loading inner-text d-none">
+												Vietnam Airlines
+											</div>
+										</div>
+										<div class="inner-content">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>05:10</span>
+												<div class="text-dark text-uppercase">HAN</div>
+											</div>
+											<div class="icon mx-5 h6 mb-0 d-none">
+												<i class="fad fa-long-arrow-right"></i>
+											</div>
+											<div class="time d-none">
+												<span>07:15</span>
+												<div class="text-dark text-uppercase">SGN</div>
+											</div>
+										</div>
+										<div class="inner-content inner-content--child">
+											<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+											<div class="time d-none">
+												<span>2h 5m</span>
+												<div class="text-muted">Bay thẳng</div>
+											</div>
+										</div>
+										<div class="inner-right">
+											<div class="inner-price">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<span>560.000 <sup>đ</sup></span> /khách
+												</div>
+											</div>
+											<div class="inner-check">
+												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
+												<div class="d-none">
+													<button class="btn btn-theme">Book</button>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
