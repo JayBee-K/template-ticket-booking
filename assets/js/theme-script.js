@@ -139,6 +139,7 @@ $(document).ready(function () {
 									       class="border-0 rounded-0 py-0 form-control form-date flatpickr flatpickr-input"
 									       id="date-return"/>
 								</div>
+								<small class="d-inline-block mt-1 color-red">(ÂL: 12-02 Năm Tân Sửu )</small>
 							</div>
 						</div>`;
 			

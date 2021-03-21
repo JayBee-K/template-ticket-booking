@@ -210,6 +210,10 @@ textarea:focus {
     background-color: var(--color-hover);
 }
 
+.color-red {
+    color: #e31f25;
+}
+
 
 /* Header */
 header {
@@ -887,21 +891,27 @@ header .language > ul > li:hover > a {
     border-top-left-radius: .25rem;
     border-bottom-left-radius: .25rem;
     border-right: 0 !important;
-    height: 84px;
+    height: 95px;
+}
+
+.template-2-page-search .form-inner > .row,
+.template-2-page-search .form-inner > .row > [class*=col],
+.template-2-page-search .form-inner  .inner{
+    height: 100%;
 }
 
 .template-2-page-search .form-choose-date {
     border-right: 0 !important;
-    height: 84px;
+    height: 95px;
 }
 
 .template-2-page-search .form-choose-people {
-    height: 84px;
+    height: 95px;
 }
 
 .template-2-page-search .form-choose-button {
     width: 100%;
-    height: 84px;
+    height: 95px;
     border-bottom-right-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     overflow: hidden;
