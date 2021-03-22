@@ -392,6 +392,10 @@ $(document).ready(function () {
 			$(this).closest('.filter-inner').find('.checkflight').prop('checked', false);
 	});
 	
+	$('.input-effect').blur(function () {
+		console.log($(this).val());
+		$(this).val() != '' ? $(this).addClass('valid') : $(this).removeClass('valid');
+	});
 	
 	setTimeout(function () {
 		$(".flight-result .placeholder-loading--show").removeClass("placeholder-loading--show");

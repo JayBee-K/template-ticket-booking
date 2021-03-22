@@ -123,7 +123,7 @@ textarea:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     content: "";
 }
 
@@ -211,7 +211,7 @@ textarea:focus {
 }
 
 .color-red {
-    color: #e31f25;
+    color: #e31f25 !important;
 }
 
 
@@ -930,12 +930,16 @@ header .language > ul > li:hover > a {
     border-radius: 0;
 }
 
+.template-2-page-search .form-choose-button button:not(.btn-customize):hover {
+    opacity: .8;
+}
+
 @media screen and (max-width: 991px) {
     .template-2-page-search {
         position: relative;
         background: #f8f9fa !important;
         box-shadow: none !important;
-        top: -30px;
+        top: -10px;
     }
 
     .template-2-tab .tab-pane .form-inner .inner-last:before {
@@ -1428,7 +1432,7 @@ header .language > ul > li:hover > a {
         content: "";
         left: 0;
         width: 100%;
-        bottom: 15px;
+        bottom: 0;
         height: 20px;
         background: url('../images/curve.png.webp') center center/cover no-repeat !important;
     }
@@ -1981,6 +1985,10 @@ header .language > ul > li:hover > a {
     font-weight: 600;
 }
 
+.template-2-page-inner .flight-result .item .inner-check .btn-theme:hover {
+    opacity: .8;
+}
+
 .template-2-page-inner .order-multi .flight-order .col-6:last-of-type {
     border-left: 1px dashed var(--color-border);
 }
@@ -2344,9 +2352,33 @@ header .language > ul > li:hover > a {
 }
 
 .template-2-booking .card-flight .card-header,
-.template-2-booking .card-flight .card-body .card-text .text-dark {
+.template-2-booking .card-flight .card-body .card-text .text-dark,
+.template-2-booking .card-flight .card-body .card-status {
     color: var(--text-dark);
     opacity: .8;
+}
+
+.template-2-booking .card-flight .card-body .card-status .status-inner {
+    border-radius: 20px;
+    padding: 7px 15px;
+    text-align: center;
+    color: #fff;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.template-2-booking .card-flight .card-body .card-status .status-inner.status-warning {
+    background: #e57b09;
+    border: 1px solid #b86307;
+}
+
+.template-2-booking .card-flight .card-body .card-status .status-inner.status-success {
+    background: #31cb55;
+    border: 1px solid #1a8131;
+}
+
+.template-2-booking .card-flight .card-body .card-text .text-dark {
+    font-size: 1em;
 }
 
 .template-2-booking .card-flight .card-text img {
@@ -2392,9 +2424,41 @@ header .language > ul > li:hover > a {
     flex-shrink: 0;
 }
 
+.template-2-booking .card-flight .form-inline .form-control {
+    height: 36px;
+    line-height: 36px;
+    width: 65%;
+}
+
+.template-2-booking .card-flight .form-inline .btn-theme {
+    background: var(--color-main);
+    font-size: 1.1em;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    color: #fff;
+    border-radius: .25rem;
+    transition: .3s all ease;
+    width: 90px;
+    line-height: 1;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.template-2-booking .card-flight .form-inline .btn-theme:hover {
+    opacity: .8;
+}
 
 .template-2-booking .card-flight .card-detail .timeline-info .timeline-text .timeline-content span {
     font-size: .9em;
+}
+
+.template-2-booking .card-flight--price.position-sticky {
+    top: 20px;
 }
 
 .template-2-booking .card-flight--price .card-header,
@@ -2402,4 +2466,453 @@ header .language > ul > li:hover > a {
     color: var(--text-dark);
     opacity: .8;
     font-size: 1.2em;
+}
+
+.template-2-booking .card-flight--price .card-footer {
+    border-top: 5px solid #f1f1f1;
+}
+
+.template-2-booking .card-flight--price .card-body .card-text .text-dark {
+    color: var(--text-dark);
+    opacity: .8;
+    font-size: 1em;
+}
+
+.template-2-booking .card-flight--price .card-body .card-subtext {
+    font-size: .95em;
+    padding: 3px 0;
+}
+
+.template-2-booking .card-info .card-footer {
+    border-top: 5px solid #f1f1f1;
+}
+
+.template-2-booking .card-info .card-footer .btn-secondary {
+    font-size: .95em;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.template-2-booking .card-info .card-footer .btn-theme {
+    background: var(--color-main);
+    font-size: 1.1em;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    color: #fff;
+    border-radius: .25rem;
+    transition: .3s all ease;
+    min-width: 100px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.template-2-booking .card-info .card-footer .btn-theme:hover {
+    opacity: .8;
+}
+
+.template-2-booking .card-info > .card-header,
+.template-2-booking .card-info .card-info--form .card-header {
+    color: var(--text-dark);
+    opacity: .8;
+    font-size: 1.2em;
+}
+
+.template-2-booking .card-info .card-info--form + .card-info--form {
+    margin-top: 30px;
+}
+
+.template-2-booking .card-info .card-info--form .form-group label {
+    margin-bottom: 0;
+    font-size: 1.1em;
+    color: var(--text-dark);
+    opacity: .8;
+    font-weight: 600;
+}
+
+.template-2-booking .card-info .card-info--form .form-group input {
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    padding-left: 0;
+    border-bottom: 1px solid var(--color-border);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form-effect .group-effect {
+    position: relative;
+    height: 44px;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-effect .group-effect .input-effect {
+    height: 100%;
+    width: 100%;
+    background: #f6f6f6;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #1f2d3d;
+    font-size: 1.1em;
+    padding-left: 15px;
+    margin-top: 0;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.form-effect .group-textarea.group-effect {
+    min-height: 80px;
+}
+
+.form-effect .group-textarea.group-effect .input-effect {
+    padding-top: 10px;
+}
+
+.form-effect .group-effect .input-effect[type="password"] {
+    padding-right: 30px;
+}
+
+.form-effect .viewPass-effect {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    right: 7px;
+    color: #a9a9a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-effect .group-effect .label-effect {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    height: 100%;
+    pointer-events: none;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    line-height: 44px;
+    color: #454545;
+    font-weight: 600;
+    opacity: .8;
+    -o-transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+}
+
+.form-effect .group-effect .label-effect i {
+    line-height: 1;
+    font-size: 0.9em;
+    margin-right: 4px;
+}
+
+.form-effect .group-effect .input-effect option:checked,
+.form-effect .group-effect .input-effect:focus,
+.form-effect .group-effect .input-effect.valid {
+    background: #fff;
+    border-color: #e9e9e9;
+}
+
+.form-effect .group-effect .input-effect:focus ~ .label-effect,
+.form-effect .group-effect .input-effect.valid ~ .label-effect {
+    -webkit-transform: translateY(-35px);
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+    font-size: 1em;
+    color: #a9a9a9;
+    background: #fff;
+    display: inline-block;
+    opacity: 1;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    left: 10px;
+}
+
+.form-effect .group-textarea.group-effect .input-effect:focus ~ .label-effect,
+.form-effect .group-textarea.group-effect .input-effect.valid ~ .label-effect {
+    -webkit-transform: translateY(-70px);
+    -ms-transform: translateY(-70px);
+    transform: translateY(-70px);
+}
+
+.template-2-booking .card-currency {
+    position: relative;
+}
+
+.template-2-booking .card-currency .card-body .bg {
+    cursor: pointer;
+    transition: box-shadow .25s ease-out;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(
+            311.03deg, rgba(6, 92, 171, .5) -16.69%, rgba(6, 92, 171, .7) 2.55%, hsla(0, 0%, 100%, .5) 91.94%);
+}
+
+.template-2-booking .card-currency .card-body .plane-illustration {
+    position: absolute;
+    top: -55px;
+    transform: rotate(10deg);
+    height: 180px;
+    width: 220px;
+    right: 25px;
+    opacity: .3;
+}
+
+.template-2-booking .card-currency .card-body .main {
+    z-index: 2;
+    position: relative;
+}
+
+.template-2-booking .card-currency .card-body .main .inner .card-subtext {
+    font-size: 1.1em;
+}
+
+.template-2-booking .card-currency .card-body .main .inner .card-title {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: var(--text-gray);
+}
+
+.template-2-booking .card-currency .card-body .main .inner .card-title span {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+    width: 20px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.template-2-booking .card-currency .card-body .main .icon {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.template-2-booking .card-currency ul li {
+    width: 33.3333%;
+    padding: 8px 15px 8px 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 600;
+    color: var(--text-gray);
+    position: relative;
+    transition: .3s all ease;
+}
+
+.template-2-booking .card-currency ul li span {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15px;
+    width: 20px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.template-2-booking .card-currency ul li:hover {
+    color: var(--color-main);
+}
+
+.template-2-booking .card-payment .card-header {
+    color: var(--text-dark);
+    opacity: .8;
+    font-size: 1.4em;
+}
+
+.template-2-booking .card-payment .card-body .item + .item {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+}
+
+.template-2-booking .card-payment .card-body .item .card-title {
+    font-size: 1.3em;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+}
+
+.template-2-booking .card-payment .card-body .item ul {
+    margin: 0 -15px;
+}
+
+.template-2-booking .card-payment .card-body .item ul li {
+    width: 33.3333%;
+    position: relative;
+    padding: 10px;
+}
+
+.template-2-booking .card-payment .card-body .item ul li .item-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    background: #fff;
+    border-radius: .4rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    transition: .2s all ease;
+}
+
+.template-2-booking .card-payment .card-body .item ul li a:hover + .item-image {
+    background: var(--bg-light);
+}
+
+.template-2-booking .card-payment .card-body .item ul li .item-image img {
+    max-width: 100%;
+}
+
+.template-2-booking .card-book .card-header {
+    color: var(--text-dark);
+    opacity: .8;
+    font-size: 1.4em;
+}
+
+.template-2-booking .card-book .card-header a {
+    text-decoration: underline !important;
+    font-size: .7em;
+    font-weight: 400;
+}
+
+.template-2-booking .card-book .card-body .bank {
+    width: 40%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.template-2-booking .card-book .card-body .bank img {
+    height: 30px;
+    flex: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.template-2-booking .card-book .card-body .bank p {
+    color: var(--text-dark);
+    opacity: .8;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+}
+
+.template-2-booking .card-book .card-body .price {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.template-2-booking .card-book .card-body .price ul {
+    width: 55%;
+}
+
+.template-2-booking .card-book .card-body .price ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-dark);
+}
+
+.template-2-booking .card-book .card-body .price ul li span:first-of-type {
+    width: 50%;
+    flex-shrink: 0;
+    font-size: 1.1em;
+    opacity: .8;
+}
+
+.template-2-booking .card-book .card-body .price ul li span:last-of-type {
+    width: 100%;
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.template-2-booking .card-book .card-body .price ul li.total {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--color-border);
+    font-size: 1.1em;
+}
+
+.template-2-booking .card-book .card-footer {
+    border-top: 5px solid #f1f1f1;
+}
+
+.template-2-booking .card-book .card-footer .btn-theme {
+    background: var(--color-main);
+    font-size: 1.1em;
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    color: #fff;
+    border-radius: .25rem;
+    transition: .3s all ease;
+    min-width: 100px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.template-2-booking .card-book .card-footer .btn-theme:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 768px) {
+
+    .template-2-booking .card-payment .card-body .item ul li {
+        width: 50%;
+    }
+
+    .template-2-booking .card-book .card-body .bank {
+        width: 100%;
+    }
+
+    .template-2-booking .card-book .card-body .price {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .template-2-booking .card-book .card-body .price ul {
+        width: 100%;
+    }
+
+    .template-2-booking .card-flight .form-inline .form-group {
+        display: flex;
+    }
 }

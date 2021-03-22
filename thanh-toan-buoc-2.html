@@ -1,0 +1,859 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Tempalte Ticket Booking</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+	<link rel="stylesheet" href="./assets/plugin/select2/select2.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #065cab;
+			--color-hover: #02325f;
+			--bg-main: #f7faff;
+			--bg-light: #F7F7F7;
+			--text-dark: #343a40;
+			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+			--color-border: #e9e9e9;
+		}
+	</style>
+</head>
+<body>
+<div class="template-2-popupTheme">
+	<div class="modal fade" id="modalLogin" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng nhập</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng nhập
+										</button>
+										<a href="javascript:void(0)" data-modal="modalForgot"
+										   class="text-muted callModal">Quên mật khẩu?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Nếu chưa có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalRegister">Click vào đây để đăng ký</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng ký</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Re-Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-address-card"></i></label>
+										<input type="text" class="form-control" placeholder="Full name">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-phone-alt"></i></label>
+										<input type="tel" class="form-control" placeholder="Number phone">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Đã có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalLogin">Click vào đây để đăng nhập</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Quên mật khẩu</span>
+							</div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="border-bottom bg-white shadow-sm position-relative">
+	<div class="container">
+		<div class="row align-items-lg-center">
+			<div class="col-lg-2">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="logo">
+						<a class="d-inline-block" href="index.html">
+							<img src="./assets/images/logo.png" alt="">
+						</a>
+					</div>
+					<div class="user d-block d-lg-none">
+						<div class="action d-flex align-items-center justify-content-lg-end justify-content-start">
+							<a href="#modalLogin" class="btn btn-customize" data-toggle="modal">
+								<span class="text">Đăng nhập</span>
+								<span class="icon"><i class="fal fa-sign-in-alt"></i></span>
+							</a>
+						</div>
+						<div class="action-user d-none align-items-center justify-content-lg-end justify-content-start py-2">
+							<a href="javascript:void(0)">
+									<span>
+										Tài khoản
+									</span>
+								<i class="fas fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Thông tin tài khoản
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Đổi mật khẩu
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Đăng xuất
+											</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="navigation">
+					<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start" id="hasMenu">
+						<li>
+							<a href="">
+								Chuyến bay
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Xe sân bay
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Đơn hàng
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Khuyến mãi
+								<i class="fal fa-angle-down ml-2"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="">
+										Submenu 01
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Submenu 02
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">
+								Trợ giúp
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Tiện ích
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="bg-mobile">
+					<div class="row row-5 align-items-center">
+						<div class="col-lg-5 col-6">
+							<div class="language d-flex align-items-center justify-content-lg-end justify-content-start py-2">
+								<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									VI
+								</span>
+									<i class="fas fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/en.png" alt="">
+									English
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/japan.png" alt="">
+									Japanese
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/en.png" alt="">
+									English
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/japan.png" alt="">
+									Japanese
+								</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-7 col-6 d-none d-lg-block">
+							<div class="action d-flex align-items-center justify-content-lg-end justify-content-start">
+								<a href="#modalLogin" class="btn btn-customize" data-toggle="modal">
+									<span class="text">Đăng nhập</span>
+									<span class="icon"><i class="fal fa-sign-in-alt"></i></span>
+								</a>
+							</div>
+							<div class="action-user d-none align-items-center justify-content-lg-end justify-content-start py-2">
+								<a href="javascript:void(0)">
+									<span>
+										Tài khoản
+									</span>
+									<i class="fas fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+											<span>
+												Thông tin tài khoản
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>
+												Đổi mật khẩu
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>
+												Đăng xuất
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6 d-block d-lg-none">
+							<div class="hamburger" id="hamburger">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay"></div>
+</header>
+<div class="main">
+	<div class="template-2-breadcrumb overflow-hidden">
+		<div class="video d-none d-lg-block">
+			<video autoplay muted loop>
+				<source src="assets/images/video-background.mp4">
+			</video>
+		</div>
+		<div class="container d-none d-lg-block">
+			<div class="row">
+				<div class="col-12">
+					<div class="inner">
+						Thanh toán
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-2-booking py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-9">
+					<div class="card border-0 rounded-sm overflow-hidden shadow-sm bg-white mb-4 card-book">
+						<div class="card-header font-weight-bold bg-transparent d-flex align-items-end justify-content-between">
+							Chuyển khoản
+							<a href="thanh-toan-buoc-1.html" class="text-muted"><i class="fal fa-angle-left mr-2"></i>Chọn
+								phương thức khác</a>
+						</div>
+						<div class="card-body">
+							<div class="d-md-flex align-items-center justify-content-between">
+								<div class="bank">
+									<img src="./assets/images/payment/TCB.webp" alt="">
+									<p class="mb-0">
+										Ngân hàng TMCP Kỹ thương Việt Nam
+									</p>
+								</div>
+								<div class="price">
+									<ul class="list-unstyled mb-0">
+										<li>
+											<span>Giá:</span>
+											<span>1.382.604 <sup>đ</sup></span>
+										</li>
+										<li>
+											<span>Phí xử lý:</span>
+											<span>130.000 <sup>đ</sup></span>
+										</li>
+										<li class="total color-red">
+											<span>Giá tổng cộng:</span>
+											<span>1.512.604 <sup>đ</sup></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card-desc">
+								<p class="mb-3 font-weight-bold text-muted pt-4 mt-4 border-top h6"><i
+										class="fal fa-book mr-2"></i>Hướng dẫn thanh toán</p>
+								<ul class="list-unstyled mb-0">
+									<li class="py-2">
+										1. Nhấn thanh toán
+									</li>
+									<li class="py-2">
+										2. Bạn sẽ được chuyển tiếp tới trang web của ngân hàng.
+									</li>
+									<li class="py-2">
+										3. Đăng nhập tài khoản Nganluong.
+									</li>
+									<li class="py-2">
+										4. Làm theo hướng dẫn của Nganluong.
+									</li>
+									<li class="py-2">
+										5. Vui lòng điền chính xác số tiền và ID biên lai.
+									</li>
+									<li class="py-2">
+										6. Đợi xác nhận trong khoảng 5 phút.
+									</li>
+									<li class="py-2">
+										7. Giữ thông tin trạng thái thanh toán nếu thanh toán thành công
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card-footer bg-transparent text-center">
+							<div class="card-text">
+								Bằng cách nhấp vào nút thanh toán, bạn đã đồng ý với
+								<a href="#" class="color-main font-weight-bold">Điều khoản & Điều kiện</a> của VeDienTu và
+								<a href="#" class="color-main font-weight-bold">Vietjet Air</a>
+							</div>
+							<div class="card-button mt-3">
+								<button class="btn btn-theme">Thanh toán</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-3">
+					<div class="card border-0 rounded-sm shadow-sm bg-white card-flight mb-4">
+						<div class="card-header font-weight-bold bg-transparent d-flex align-items-center justify-content-between">
+							Mã Airpaz
+							<span class="text-muted">1012371376</span>
+						</div>
+						<div class="card-body">
+							<div class="card-status h6 mb-0 font-weight-bold d-flex align-items-center justify-content-between">
+								Trạng thái đặt chỗ
+								<div class="status-inner status-success">
+									<!-- Class status-warning hoặc class status success-->
+									Cần thanh toán
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 rounded-sm shadow-sm bg-white card-flight mb-4">
+						<div class="card-header font-weight-bold bg-transparent">
+							Chuyến bay
+						</div>
+						<div class="card-body">
+							<div class="card-flight--info">
+								<div class="card-text">
+									<div class="font-weight-bold text-dark">Khởi hành chuyến bay</div>
+									<div class="text-muted">
+										Ngày 23 tháng 03 năm 2021
+										<span class="d-inline-block mt-1 color-red">(ÂL: 12-02 Năm Tân Sửu)</span>
+									</div>
+								</div>
+								<div class="card-text mt-3 d-flex align-items-center justify-content-center">
+									<div class="mr-auto">
+										<div class="font-weight-bold text-dark">Vietnam Air Airlines</div>
+										<div class="text-muted">
+											VJ175
+										</div>
+									</div>
+									<div class="ml-auto flex-shrink-0">
+										<img src="./assets/images/VN.webp" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="card-detail d-flex mt-3 pt-3 border-top">
+								<div class="timeline d-flex align-items-center justify-content-center flex-column flex-shrink-0">
+									<i class="circle"></i>
+									<i class="line"></i>
+									<i class="disc"></i>
+								</div>
+								<div class="timeline-info ml-3 flex-grow-1 flex-shrink-1">
+									<div class="timeline-text">
+										<div class="d-flex">
+											<div class="timeline-time">
+												<p class="font-weight-bold mb-0 text-dark">05:40</p>
+												<span class="d-block text-muted">Nhà ga 2</span>
+											</div>
+											<div class="timeline-content">
+												<p class="font-weight-bold mb-0 text-dark">Hà Nội (HAN)</p>
+												<span class="d-block text-muted">Sân bay quốc tế Nội Bài</span>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-duration my-4 text-muted">
+										<i class="fal fa-clock"></i>
+										2 giờ 5 phút
+									</div>
+									<div class="timeline-text">
+										<div class="d-flex align-items-end">
+											<div class="timeline-time">
+												<p class="font-weight-bold mb-0 text-dark">07:45</p>
+												<span class="d-block text-muted">Nhà ga 1</span>
+											</div>
+											<div class="timeline-content">
+												<p class="font-weight-bold mb-0 text-dark">Tp. Hồ Chí Minh ( SGN )</p>
+												<span class="d-block text-muted">Sân bay quốc tế Tân Sơn Nhất</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 rounded-sm shadow-sm bg-white card-flight--price mb-4">
+						<div class="card-header font-weight-bold bg-transparent">
+							Giá cả chi tiết
+						</div>
+						<div class="card-body">
+							<div class="card-flight--price---info">
+								<div class="card-text d-flex align-items-center justify-content-between">
+									<div class="font-weight-bold text-dark">
+										Khởi hành (HAN <i class="fal fa-long-arrow-right"></i> SGN)
+									</div>
+									<div class="font-weight-bold text-dark">
+										666.302 <sup>đ</sup>
+									</div>
+								</div>
+								<div class="card-subtext d-flex align-items-center justify-content-between">
+									<div class="text-muted">
+										Người lớn x1
+									</div>
+									<div class="text-muted">
+										199.000 <sup>đ</sup>
+									</div>
+								</div>
+								<div class="card-subtext d-flex align-items-center justify-content-between">
+									<div class="text-muted">
+										Thuế
+									</div>
+									<div class="text-muted">
+										480.900 <sup>đ</sup>
+									</div>
+								</div>
+								<div class="card-subtext d-flex align-items-center justify-content-between">
+									<div class="text-muted">
+										Giảm giá
+									</div>
+									<div class="color-red">
+										- 13.598 <sup>đ</sup>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer font-weight-bold bg-transparent d-flex align-items-center justify-content-between">
+							<span>Giá tổng cộng</span>
+							<span class="color-red">666.302 <sup>đ</sup></span>
+						</div>
+					</div>
+					<div class="card border-0 rounded-sm shadow-sm bg-white card-flight mb-4">
+						<div class="card-header font-weight-bold bg-transparent">
+							Voucher/Khuyến mãi
+						</div>
+						<div class="card-body">
+							<form action="" class="form-inline">
+								<div class="form-group w-100">
+									<input type="text" class="form-control" placeholder="Nhập mã khuyến mãi">
+									<button class="btn btn-theme ml-auto">Xác nhận</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="card border-0 rounded-sm shadow-sm bg-white card-flight mb-4">
+						<div class="card-header font-weight-bold bg-transparent">
+							Hành khách
+						</div>
+						<div class="card-body">
+							<ul class="list-unstyled mb-0">
+								<li class="py-1 d-flex align-items-center justify-content-between">
+									<span class="font-weight-bold text-muted">1. Mr. Nguyễn Văn A</span>
+									<span class="text-muted">Người lớn</span>
+								</li>
+								<li class="py-1 d-flex align-items-center justify-content-between">
+									<span class="font-weight-bold text-muted">2. Mr. Nguyễn Văn B</span>
+									<span class="text-muted">Người lớn</span>
+								</li>
+								<li class="py-1 d-flex align-items-center justify-content-between">
+									<span class="font-weight-bold text-muted">3. Mrs. Nguyễn Thị C</span>
+									<span class="text-muted">Trẻ em</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="position-relative bg-white">
+		<div class="footer-top py-5 position-relative">
+			<div class="container">
+				<div class="row pb-5">
+					<div class="col-md-12 text-center">
+						<div class="d-flex align-items-center justify-content-center footer-image">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+							<a href="index.html">
+								<img src="./assets/images/1.svg" alt="">
+							</a>
+							<a href="index.html">
+								<img src="./assets/images/2.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Vedientu
+							</div>
+							<div class="footer-list footer-link">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Trang chủ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Về chúng tôi
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Khuyến mãi
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Blog Vedientu
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Thông tin hãng hàng không
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Tất cả các chuyến bay
+										</a>
+									</li>
+								
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Tài khoản
+							</div>
+							<div class="footer-list footer-link">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Đăng ký
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Quên mật khẩu
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Tài khoản
+							</div>
+							<div class="footer-list footer-link">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											FAQ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Trung tâm Hỗ trợ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Điều khoản sử dụng
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Điều khoản & Điều kiện
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Theo dõi chúng tôi
+							</div>
+							<div class="footer-list footer-social">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="" class="facebook">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="twitter">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="youtube">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="linkedin">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="instagram">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="contact">
+											<i class="fal fa-at"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom bg-light py-3 border-top position-relative">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center text-muted">
+						<p class="mb-1">Bản quyền năm 2021 vedientu.com. Đã đăng ký Bản quyền.</p>
+						<small>Tất cả các logo, bằng sáng chế và nhãn hiệu đều thuộc về chủ sở hữu tương ứng</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+	<script type="text/javascript" src="./assets/plugin/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+	<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+	<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>
