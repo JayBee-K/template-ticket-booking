@@ -2893,9 +2893,14 @@ header .language > ul > li:hover > a {
 }
 
 @media screen and (max-width: 768px) {
-
+    .template-2-booking .card-currency ul li,
     .template-2-booking .card-payment .card-body .item ul li {
         width: 50%;
+    }
+
+    .template-2-booking .card-currency ul li {
+        padding-right: 8px;
+        font-size: .95em;
     }
 
     .template-2-booking .card-book .card-body .bank {
