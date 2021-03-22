@@ -896,7 +896,7 @@ header .language > ul > li:hover > a {
 
 .template-2-page-search .form-inner > .row,
 .template-2-page-search .form-inner > .row > [class*=col],
-.template-2-page-search .form-inner  .inner{
+.template-2-page-search .form-inner .inner {
     height: 100%;
 }
 
@@ -2338,3 +2338,68 @@ header .language > ul > li:hover > a {
     }
 }
 
+
+.template-2-booking .card-flight .card-header {
+    font-size: 1.2em;
+}
+
+.template-2-booking .card-flight .card-header,
+.template-2-booking .card-flight .card-body .card-text .text-dark {
+    color: var(--text-dark);
+    opacity: .8;
+}
+
+.template-2-booking .card-flight .card-text img {
+    height: 30px;
+}
+
+.template-2-booking .card-flight .card-detail .timeline {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.template-2-booking .card-flight .card-detail .timeline .circle {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    display: block;
+    border: 1px solid #727377;
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.template-2-booking .card-flight .card-detail .timeline .line {
+    background-color: #dedede;
+    height: 100%;
+    width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.template-2-booking .card-flight .card-detail .timeline .disc {
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    display: block;
+    background: #727377;
+    flex-shrink: 0;
+}
+
+.template-2-booking .card-flight .card-detail .timeline-info .timeline-text .timeline-time {
+    width: 85px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+
+.template-2-booking .card-flight .card-detail .timeline-info .timeline-text .timeline-content span {
+    font-size: .9em;
+}
+
+.template-2-booking .card-flight--price .card-header,
+.template-2-booking .card-flight--price .card-footer {
+    color: var(--text-dark);
+    opacity: .8;
+    font-size: 1.2em;
+}
