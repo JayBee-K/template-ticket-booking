@@ -1,0 +1,766 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Tempalte Ticket Booking</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/bootstrap-flatpickr/bootstrap-flatpickr.min.css">
+	<link rel="stylesheet" href="./assets/plugin/select2/select2.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #065cab;
+			--color-hover: #02325f;
+			--bg-main: #f7faff;
+			--bg-light: #F7F7F7;
+			--text-dark: #343a40;
+			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+			--color-border: #e9e9e9;
+		}
+	</style>
+</head>
+<body>
+<div class="template-2-popupTheme">
+	<div class="modal fade" id="modalLogin" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng nhập</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng nhập
+										</button>
+										<a href="javascript:void(0)" data-modal="modalForgot"
+										   class="text-muted callModal">Quên mật khẩu?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Nếu chưa có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalRegister">Click vào đây để đăng ký</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Đăng ký</span> <br>Để đặt vé với giá ưu đãi
+							</div>
+							<div class="d-flex align-items-center justify-content-center my-4">
+								<a href="javascript:void(0)" class="btn-social btn-facebook">
+									<i class="fab fa-facebook-f"></i>
+									Facebook
+								</a>
+								<button type="button" class="btn-social btn-google">
+									<i class="fab fa-google-plus-g"></i>
+									Google
+								</button>
+							</div>
+							<div class="divider"><span>Hoặc</span></div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-clock"></i></label>
+										<input type="password" class="form-control" placeholder="Re-Password">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-address-card"></i></label>
+										<input type="text" class="form-control" placeholder="Full name">
+									</div>
+									<div class="form-group">
+										<label for=""><i class="fas fa-phone-alt"></i></label>
+										<input type="tel" class="form-control" placeholder="Number phone">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-inner-footer bg-light border-top px-4 py-3 text-justify">
+							<p>
+								Đã có tài khoản đăng nhập, vui lòng
+								<a class="font-weight-bold color-main callModal" href="javascript:void(0)"
+								   data-modal="modalLogin">Click vào đây để đăng nhập</a>
+							</p>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content bg-transparent rounded-0 border-0">
+				<div class="modal-body p-0">
+					<div class="modal-inner overflow-hidden bg-white">
+						<div class="px-4 py-3">
+							<div class="heading text-center">
+								<span>Quên mật khẩu</span>
+							</div>
+							<div class="form my-4">
+								<form action="">
+									<div class="form-group">
+										<label for=""><i class="fas fa-envelope"></i></label>
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="mt-4 d-flex align-items-end justify-content-between">
+										<button type="submit" class="btn-social btn-login">Đăng ký
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-right">
+						<button type="button" class="close position-absolute rounded-0 bg-transparent"
+						        data-dismiss="modal">
+							<i class="fal fa-times"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="border-bottom bg-white shadow-sm position-relative">
+	<div class="container">
+		<div class="row align-items-lg-center">
+			<div class="col-lg-2">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="logo">
+						<a class="d-inline-block" href="index.html">
+							<img src="./assets/images/logo.png" alt="">
+						</a>
+					</div>
+					<div class="user d-block d-lg-none">
+						<div class="action d-flex align-items-center justify-content-lg-end justify-content-start">
+							<a href="#modalLogin" class="btn btn-customize" data-toggle="modal">
+								<span class="text">Đăng nhập</span>
+								<span class="icon"><i class="fal fa-sign-in-alt"></i></span>
+							</a>
+						</div>
+						<div class="action-user d-none align-items-center justify-content-lg-end justify-content-start py-2">
+							<a href="javascript:void(0)">
+									<span>
+										Tài khoản
+									</span>
+								<i class="fas fa-angle-down"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Thông tin tài khoản
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Đổi mật khẩu
+											</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+											<span>
+												Đăng xuất
+											</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="navigation">
+					<ul class="list-unstyled mb-0 d-lg-flex align-items-center justify-content-start" id="hasMenu">
+						<li>
+							<a href="">
+								Chuyến bay
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Xe sân bay
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Đơn hàng
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Khuyến mãi
+								<i class="fal fa-angle-down ml-2"></i>
+							</a>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="">
+										Submenu 01
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Submenu 02
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="">
+								Trợ giúp
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Tiện ích
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="bg-mobile">
+					<div class="row row-5 align-items-center">
+						<div class="col-lg-5 col-6">
+							<div class="language d-flex align-items-center justify-content-lg-end justify-content-start py-2">
+								<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									VI
+								</span>
+									<i class="fas fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/en.png" alt="">
+									English
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/japan.png" alt="">
+									Japanese
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/vi.png" alt="">
+									Vietnamese
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/en.png" alt="">
+									English
+								</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+								<span>
+									<img src="./assets/images/language/japan.png" alt="">
+									Japanese
+								</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-7 col-6 d-none d-lg-block">
+							<div class="action d-flex align-items-center justify-content-lg-end justify-content-start">
+								<a href="#modalLogin" class="btn btn-customize" data-toggle="modal">
+									<span class="text">Đăng nhập</span>
+									<span class="icon"><i class="fal fa-sign-in-alt"></i></span>
+								</a>
+							</div>
+							<div class="action-user d-none align-items-center justify-content-lg-end justify-content-start py-2">
+								<a href="javascript:void(0)">
+									<span>
+										Tài khoản
+									</span>
+									<i class="fas fa-angle-down"></i>
+								</a>
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)">
+											<span>
+												Thông tin tài khoản
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>
+												Đổi mật khẩu
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<span>
+												Đăng xuất
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6 d-block d-lg-none">
+							<div class="hamburger" id="hamburger">
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-overlay"></div>
+</header>
+<div class="main">
+	<div class="template-2-breadcrumb overflow-hidden">
+		<div class="video d-none d-lg-block">
+			<video autoplay muted loop>
+				<source src="assets/images/video-background.mp4">
+			</video>
+		</div>
+		<div class="container d-none d-lg-block">
+			<div class="row">
+				<div class="col-12">
+					<div class="inner">
+						Chuyển quỹ
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container pt-5">
+		<div class="row row-10">
+			<div class="col-md-6">
+				<div class="bg-white rounded-sm border p-4">
+					<h6 class="template-2-heading-small">Tạo yêu cầu chuyển tiền:</h6>
+					<form action="">
+						<div class="inner">
+							<div class="form-group mb-4">
+								<label for="wallet" class="template-1-label text-dark">
+									Chọn quỹ:
+								</label>
+								<select class="form-control" id="wallet">
+									<option value="1" selected>Tài khoản quỹ VND - 111.823đ</option>
+									<option value="2">Tài khoản quỹ VND - 151.823đ</option>
+								</select>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group mb-4">
+										<label for="account" class="template-1-label text-dark">
+											Tài khoản nhận
+										</label>
+										<input type="text" class="form-control" id="account"
+										       placeholder="Nhập email, username hoặc số điện thoại">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group mb-4">
+										<label for="name" class="template-1-label text-dark">
+											Tên người nhận
+										</label>
+										<input type="text" class="form-control" id="name" readonly>
+									</div>
+								</div>
+							</div>
+							<div class="form-group mb-4">
+								<label for="price" class="template-1-label text-dark">
+									Số tiền
+								</label>
+								<input type="text" class="form-control" id="price">
+							</div>
+							<div class="form-group mb-4">
+								<label for="mess" class="template-1-label text-dark">Nội
+									dung</label>
+								<textarea class="form-control" id="mess" rows="1"></textarea>
+							</div>
+							<div class="form-group mb-0 mt-5">
+								<button class="btn template-2-btn-theme px-5">
+									Gửi thẻ cào
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-6 mt-md-0 mt-4">
+				<div class="bg-white rounded-sm border p-4 mt-4">
+					<h6 class="template-2-heading-small">Phí chuyển tiền:</h6>
+					<div class="table-responsive">
+						<table class="table table-bordered template-1-table">
+							<thead>
+							<tr class="bg-theme">
+								<th>Loại</th>
+								<th>VNĐ</th>
+							</tr>
+							<tr>
+								<td>Phí cố định</td>
+								<td class="font-weight-bold">100 VND</td>
+							</tr>
+							<tr>
+								<td>Phí %</td>
+								<td class="font-weight-bold">0</td>
+							</tr>
+							<tr>
+								<td>Tổng chuyển tối đa trong ngày</td>
+								<td class="font-weight-bold">
+									Không giới hạn
+								</td>
+							</tr>
+							<tr>
+								<td>Số tiền chuyển tối thiểu</td>
+								<td class="font-weight-bold">
+									10,000 VND
+								</td>
+							</tr>
+							<tr>
+								<td>Số tiền chuyển tối đa</td>
+								<td class="font-weight-bold">
+									20,000,000 VND
+								</td>
+							</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container py-5">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg-white border rounded-sm p-4">
+					<h6 class="template-2-heading-small">Lịch sử chuyển tiền:</h6>
+					<div class="table-responsive">
+						<table class="table table-bordered template-1-table">
+							<thead>
+							<tr class="bg-theme">
+								<th>Đơn hàng</th>
+								<th class="text-center">Số tiền</th>
+								<th>Tài khoản gửi/nhận</th>
+								<th>Ngày tạo</th>
+								<th class="text-center">Trạng thái</th>
+								<th>Nội dung</th>
+							</tr>
+							<tr>
+								<td class="font-weight-bold">D603CEED5892C5</td>
+								<td class="text-center">350.000</td>
+								<td>Hoàng Tấn</td>
+								<td>2021-03-15 20:40:37</td>
+								<td class="text-center">
+									<div class="badge badge-success template-1-badge">Đã nhận</div>
+								</td>
+								<td class="text-center">
+									Không có nội dung
+								</td>
+							</tr>
+							<tr>
+								<td class="font-weight-bold">D603CEED5892C5</td>
+								<td class="text-center">350.000</td>
+								<td>Hoàng Tấn</td>
+								<td>2021-03-15 20:40:37</td>
+								<td class="text-center">
+									<div class="badge badge-danger template-1-badge">Đã huỷ</div>
+								</td>
+								<td class="text-center">
+									Không có nội dung
+								</td>
+							</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="position-relative bg-white">
+		<div class="footer-top py-5 position-relative">
+			<div class="container">
+				<div class="row pb-5">
+					<div class="col-md-12 text-center">
+						<div class="d-flex align-items-center justify-content-center footer-image">
+							<a href="index.html">
+								<img src="./assets/images/logo.png" alt="">
+							</a>
+							<a href="index.html">
+								<img src="./assets/images/1.svg" alt="">
+							</a>
+							<a href="index.html">
+								<img src="./assets/images/2.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Vedientu
+							</div>
+							<div class="footer-list footer-link">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Trang chủ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Về chúng tôi
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Khuyến mãi
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Blog Vedientu
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Thông tin hãng hàng không
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Tất cả các chuyến bay
+										</a>
+									</li>
+								
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Tài khoản
+							</div>
+							<div class="footer-list footer-link">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											Đăng ký
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Quên mật khẩu
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Tài khoản
+							</div>
+							<div class="footer-list footer-link">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="#">
+											FAQ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Trung tâm Hỗ trợ
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Điều khoản sử dụng
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Điều khoản & Điều kiện
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-inner">
+							<div class="footer-title mb-3 font-weight-bold text-dark h5">
+								Theo dõi chúng tôi
+							</div>
+							<div class="footer-list footer-social">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="" class="facebook">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="twitter">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="youtube">
+											<i class="fab fa-youtube"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="linkedin">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="instagram">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li>
+										<a href="" class="contact">
+											<i class="fal fa-at"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom bg-light py-3 border-top position-relative">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center text-muted">
+						<p class="mb-1">Bản quyền năm 2021 vedientu.com. Đã đăng ký Bản quyền.</p>
+						<small>Tất cả các logo, bằng sáng chế và nhãn hiệu đều thuộc về chủ sở hữu tương ứng</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/bootstrap-flatpickr/bootstrap-flatpickr.js"></script>
+	<script type="text/javascript" src="./assets/plugin/bootstrap-flatpickr/bootstrap-flatpickr-vn.js"></script>
+	<script type="text/javascript" src="./assets/plugin/select2/select2.min.js"></script>
+	<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+	<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>

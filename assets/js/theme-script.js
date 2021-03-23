@@ -401,4 +401,6 @@ $(document).ready(function () {
 		$(".flight-result .placeholder-loading--show").removeClass("placeholder-loading--show");
 		$(".flight-result .d-none").removeClass("d-none");
 	}, 3000);
+	
+	$('[data-toggle="tooltip"]').tooltip();
 });
