@@ -1115,6 +1115,106 @@
 													<button class="btn btn-theme">Book</button>
 												</div>
 											</div>
+											<div class="inner-toggle d-none">
+												<a href="#toggleDetail01"
+												   class="color-red font-weight-bold d-inline-block"
+												   data-toggle="collapse">Xem chi tiết <i class="fal fa-angle-down"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="toggleDetail01">
+										<div class="collapse-inner bg-white border-top">
+											<ul class="nav nav-tabs border-bottom-0">
+												<li class="nav-item">
+													<a class="nav-link active mb-0 border-0" data-toggle="tab"
+													   href="#detail-01">
+														Chi tiết
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link mb-0 border-0" data-toggle="tab"
+													   href="#price-01">
+														Giá vé
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link mb-0 border-0" data-toggle="tab"
+													   href="#luggage-01">
+														Hành lý
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link mb-0 border-0" data-toggle="tab"
+													   href="#condition-01">
+														Điều kiện và điều khoản
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade show active" id="detail-01">
+													<div class="detail-inner">
+														<div class="detail-info">
+															<ul class="list-unstyled mb-0 d-flex align-items-md-center justify-content-start">
+																<li>
+																	<img src="./assets/images/VN.webp" alt="">
+																	Hà Nội - Hồ Chí Minh
+																</li>
+																<li>
+																	VJ135
+																</li>
+																<li>
+																	Economy
+																</li>
+															</ul>
+														</div>
+														<div class="detail-main">
+															<ul class="list-unstyled mb-0 d-flex flex-column flex-md-row align-items-start justify-content-start">
+																<li>
+																	<ul class="list-unstyled mb-0 d-flex align-items-start justify-content-start text-muted">
+																		<li>
+																			<div class="h5 mb-0 text-dark">HAN 05:10
+																			</div>
+																			<span class="mb-1 d-block">30-03-2021</span>
+																			<span class="d-block">Sân bay Nội Bài</span>
+																			<span class="d-block">Hà Nội</span>
+																		</li>
+																		<li class="text-center">
+																			<i class="fas fa-clock mb-1 h5"></i>
+																			<div>2h10p</div>
+																		</li>
+																		<li>
+																			<div class="h5 mb-0 text-dark">SGN 07:20
+																			</div>
+																			<span class="mb-1 d-block">30-03-2021</span>
+																			<span class="d-block">Sân bay Tân Sơn Nhất</span>
+																			<span class="d-block">Hồ Chí Minh</span>
+																		</li>
+																	</ul>
+																</li>
+																<li>
+																	<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start flex-wrap text-muted">
+																		<li>
+																			Số hiệu: <b class="pl-1">VJ135</b>
+																		</li>
+																		<li>
+																			Mã máy bay: <b class="pl-1">None</b>
+																		</li>
+																		<li>
+																			Hạng vé: <b class="pl-1">E1_Eco</b>
+																		</li>
+																		<li>
+																			Hành lý: <b class="pl-1">None</b>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="price-01"></div>
+												<div class="tab-pane fade" id="luggage-01"></div>
+												<div class="tab-pane fade" id="condition-01"></div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1498,8 +1598,11 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="flight-result border-top">
-								<div class="item">
+								<div class="item choose-flight">
 									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-choose">
+											<span></span>
+										</div>
 										<div class="inner-logo">
 											<img class="placeholder-loading--show placeholder-image"
 											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
@@ -1539,17 +1642,22 @@
 													<span>560.000 <sup>đ</sup></span>
 												</div>
 											</div>
+											<!--
 											<div class="inner-check">
 												<div class="placeholder-loading--show placeholder-loading placeholder-box"></div>
 												<div class="d-none">
 													<button class="btn btn-theme">Book</button>
 												</div>
 											</div>
+											-->
 										</div>
 									</div>
 								</div>
-								<div class="item">
+								<div class="item choose-flight">
 									<div class="inner d-flex align-items-center p-3">
+										<div class="inner-choose">
+											<span></span>
+										</div>
 										<div class="inner-logo">
 											<img class="placeholder-loading--show placeholder-image"
 											     src="https://images.ixigo.com/image/upload/flight/a41307e6be7fe62753e308ce9a7504fe-rbcvz.png"
@@ -2177,6 +2285,106 @@
 													<button class="btn btn-theme">Book</button>
 												</div>
 											</div>
+											<div class="inner-toggle mt-2">
+												<a href="#toggleDetail01"
+												   class="color-red font-weight-bold d-inline-block"
+												   data-toggle="collapse">Xem chi tiết <i class="fal fa-angle-down"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="collapse" id="toggleDetail01">
+										<div class="collapse-inner bg-white border-top">
+											<ul class="nav nav-tabs border-bottom-0">
+												<li class="nav-item">
+													<a class="nav-link active mb-0 border-0" data-toggle="tab"
+													   href="#detail-01">
+														Chi tiết
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link mb-0 border-0" data-toggle="tab"
+													   href="#price-01">
+														Giá vé
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link mb-0 border-0" data-toggle="tab"
+													   href="#luggage-01">
+														Hành lý
+													</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link mb-0 border-0" data-toggle="tab"
+													   href="#condition-01">
+														Điều kiện và điều khoản
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade show active" id="detail-01">
+													<div class="detail-inner">
+														<div class="detail-info">
+															<ul class="list-unstyled mb-0 d-flex align-items-md-center justify-content-start">
+																<li>
+																	<img src="./assets/images/VN.webp" alt="">
+																	Hà Nội - Hồ Chí Minh
+																</li>
+																<li>
+																	VJ135
+																</li>
+																<li>
+																	Economy
+																</li>
+															</ul>
+														</div>
+														<div class="detail-main">
+															<ul class="list-unstyled mb-0 d-flex flex-column flex-md-row align-items-start justify-content-start">
+																<li>
+																	<ul class="list-unstyled mb-0 d-flex align-items-start justify-content-start text-muted">
+																		<li>
+																			<div class="h5 mb-0 text-dark">HAN 05:10
+																			</div>
+																			<span class="mb-1 d-block">30-03-2021</span>
+																			<span class="d-block">Sân bay Nội Bài</span>
+																			<span class="d-block">Hà Nội</span>
+																		</li>
+																		<li class="text-center">
+																			<i class="fas fa-clock mb-1 h5"></i>
+																			<div>2h10p</div>
+																		</li>
+																		<li>
+																			<div class="h5 mb-0 text-dark">SGN 07:20
+																			</div>
+																			<span class="mb-1 d-block">30-03-2021</span>
+																			<span class="d-block">Sân bay Tân Sơn Nhất</span>
+																			<span class="d-block">Hồ Chí Minh</span>
+																		</li>
+																	</ul>
+																</li>
+																<li>
+																	<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start flex-wrap text-muted">
+																		<li>
+																			Số hiệu: <b class="pl-1">VJ135</b>
+																		</li>
+																		<li>
+																			Mã máy bay: <b class="pl-1">None</b>
+																		</li>
+																		<li>
+																			Hạng vé: <b class="pl-1">E1_Eco</b>
+																		</li>
+																		<li>
+																			Hành lý: <b class="pl-1">None</b>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="price-01"></div>
+												<div class="tab-pane fade" id="luggage-01"></div>
+												<div class="tab-pane fade" id="condition-01"></div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -2420,7 +2628,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="item">
+								<div class="item choose-flight">
 									<div class="inner d-flex align-items-end p-3">
 										<div class="inner-left">
 											<div class="inner-logo">
@@ -2432,6 +2640,9 @@
 												<div class="placeholder-loading--show placeholder-loading"></div>
 												<div class="loading inner-text d-none">
 													Vietnam Airlines
+												</div>
+												<div class="inner-choose">
+													<span></span>
 												</div>
 											</div>
 											<div class="inner-content">
@@ -2915,6 +3126,199 @@
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="template-2-result-flight">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="inner">
+						<div class="w-100 d-flex flex-column flex-md-row justify-content-start">
+							<div class="item">
+								<img src="./assets/images/VN.webp" alt="">
+								<div class="flight-name">
+									Vietnam Airline
+									<small class="d-block">VN356</small>
+								</div>
+								<div class="flight-time">
+									<div class="flight-info">
+										<div class="flight-info--item">
+											HAN <b>05:10</b>
+										</div>
+										<div class="flight-info--icon">
+											<i class="fad fa-long-arrow-alt-right"></i>
+										</div>
+										<div class="flight-info--item">
+											SGN <b>07:10</b>
+										</div>
+									</div>
+									<div class="flight-desc">
+										<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-muted">
+											<li>
+												30-03-2021
+											</li>
+											<li>
+												Bay thẳng
+											</li>
+											<li>130p</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img src="./assets/images/VN.webp" alt="">
+								<div class="flight-name">
+									Vietnam Airline
+									<small class="d-block">VN356</small>
+								</div>
+								<div class="flight-time">
+									<div class="flight-info">
+										<div class="flight-info--item">
+											SGN <b>23:10</b>
+										</div>
+										<div class="flight-info--icon">
+											<i class="fad fa-long-arrow-alt-right"></i>
+										</div>
+										<div class="flight-info--item">
+											HAN <b>01:10</b>
+										</div>
+									</div>
+									<div class="flight-desc">
+										<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start text-muted">
+											<li>
+												05-04-2021
+											</li>
+											<li>
+												Bay thẳng
+											</li>
+											<li>130p</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--	Desktop -->
+							<div class="price h5 mb-0 d-none d-md-flex align-items-center justify-content-center color-red">
+								1.130.154 <sup>đ</sup>
+							</div>
+							<div class="button d-none d-md-flex flex-column align-items-center justify-content-end">
+								<button class="btn btn-theme">Đặt vé</button>
+								<a href="#toggleDetailTopup01"
+								   class="color-red mt-1 font-weight-bold d-inline-block"
+								   data-toggle="collapse">Xem chi tiết <i class="fal fa-angle-down"></i></a>
+							</div>
+							<!--	Mobile -->
+							<div class="d-flex d-md-none">
+								<div class="price h5 mb-0 d-flex align-items-center justify-content-center color-red">
+									1.130.154 <sup>đ</sup>
+								</div>
+								<div class="button  flex-column align-items-center justify-content-end">
+									<button class="btn btn-theme">Đặt vé</button>
+									<a href="#toggleDetailTopup01"
+									   class="color-red mt-1 font-weight-bold d-inline-block"
+									   data-toggle="collapse">Xem chi tiết <i class="fal fa-angle-down"></i></a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="collapse" id="toggleDetailTopup01">
+							<div class="collapse-inner bg-white border-top">
+								<ul class="nav nav-tabs border-bottom-0">
+									<li class="nav-item">
+										<a class="nav-link active mb-0 border-0" data-toggle="tab"
+										   href="#detail-01">
+											Chi tiết
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mb-0 border-0" data-toggle="tab"
+										   href="#price-01">
+											Giá vé
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mb-0 border-0" data-toggle="tab"
+										   href="#luggage-01">
+											Hành lý
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link mb-0 border-0" data-toggle="tab"
+										   href="#condition-01">
+											Điều kiện và điều khoản
+										</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="detail-01">
+										<div class="detail-inner">
+											<div class="detail-info">
+												<ul class="list-unstyled mb-0 d-flex align-items-md-center justify-content-start">
+													<li>
+														<img src="./assets/images/VN.webp" alt="">
+														Hà Nội - Hồ Chí Minh
+													</li>
+													<li>
+														VJ135
+													</li>
+													<li>
+														Economy
+													</li>
+												</ul>
+											</div>
+											<div class="detail-main">
+												<ul class="list-unstyled mb-0 d-flex flex-column flex-md-row align-items-start justify-content-start">
+													<li>
+														<ul class="list-unstyled mb-0 d-flex align-items-start justify-content-start text-muted">
+															<li>
+																<div class="h5 mb-0 text-dark">HAN 05:10
+																</div>
+																<span class="mb-1 d-block">30-03-2021</span>
+																<span class="d-block">Sân bay Nội Bài</span>
+																<span class="d-block">Hà Nội</span>
+															</li>
+															<li class="text-center">
+																<i class="fas fa-clock mb-1 h5"></i>
+																<div>2h10p</div>
+															</li>
+															<li>
+																<div class="h5 mb-0 text-dark">SGN 07:20
+																</div>
+																<span class="mb-1 d-block">30-03-2021</span>
+																<span class="d-block">Sân bay Tân Sơn Nhất</span>
+																<span class="d-block">Hồ Chí Minh</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-start flex-wrap text-muted">
+															<li>
+																Số hiệu: <b class="pl-1">VJ135</b>
+															</li>
+															<li>
+																Mã máy bay: <b class="pl-1">None</b>
+															</li>
+															<li>
+																Hạng vé: <b class="pl-1">E1_Eco</b>
+															</li>
+															<li>
+																Hành lý: <b class="pl-1">None</b>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="price-01"></div>
+									<div class="tab-pane fade" id="luggage-01"></div>
+									<div class="tab-pane fade" id="condition-01"></div>
 								</div>
 							</div>
 						</div>

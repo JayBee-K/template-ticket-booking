@@ -400,7 +400,19 @@ $(document).ready(function () {
 	setTimeout(function () {
 		$(".flight-result .placeholder-loading--show").removeClass("placeholder-loading--show");
 		$(".flight-result .d-none").removeClass("d-none");
-	}, 3000);
+	}, 500);
 	
 	$('[data-toggle="tooltip"]').tooltip();
+	
+	$('.choose-flight').click(function () {
+		if ($(this).hasClass('checked-choose')) {
+			$(this).removeClass('checked-choose');
+			if (!$('.choose-flight').hasClass('checked-choose')) {
+				$('.template-2-result-flight').removeClass('show');
+			}
+		} else {
+			$(this).addClass('checked-choose');
+			$('.template-2-result-flight').addClass('show');
+		}
+	})
 });
