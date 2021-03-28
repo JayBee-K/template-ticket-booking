@@ -893,12 +893,15 @@ header .language > ul > li:hover > a {
     border-right: 0 !important;
     height: 95px;
 }
+@media screen and (min-width: 1024px) {
 
-.template-2-page-search .form-inner > .row,
-.template-2-page-search .form-inner > .row > [class*=col],
-.template-2-page-search .form-inner .inner {
-    height: 100%;
+    .template-2-page-search .form-inner > .row,
+    .template-2-page-search .form-inner > .row > [class*=col],
+    .template-2-page-search .form-inner .inner {
+        height: 100%;
+    }
 }
+
 
 .template-2-page-search .form-choose-date {
     border-right: 0 !important;
