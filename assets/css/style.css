@@ -2033,7 +2033,7 @@ header .language > ul > li:hover > a {
     top: 0;
     left: calc(50% + 1px);
     transform: translateX(-50%);
-    width: 1px;
+    width: 2px;
     height: 100%;
     border-left: 1px dashed var(--color-border);
     z-index: 2;
