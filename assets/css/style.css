@@ -2110,15 +2110,15 @@ header .language > ul > li:hover > a {
 }
 
 .template-2-page-inner .order-multi .flight-result .item .inner-choose span {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    border: 1px solid var(--color-border);
+    border: 1px solid #d9d9d9;
     display: block;
     position: relative;
     cursor: pointer;
     transition: .2s all ease;
-    background: #fff;
+    background: #f1f5f5;
 }
 
 .template-2-page-inner .order-multi .flight-result .item .inner-choose span:before {
@@ -2479,8 +2479,8 @@ header .language > ul > li:hover > a {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    border: 1px solid var(--color-border);
-    background: #fff;
+    border: 1px solid #d9d9d9;
+    background: #f1f5f5;
     display: block;
     position: relative;
     cursor: pointer;
