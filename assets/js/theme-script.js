@@ -131,15 +131,15 @@ $(document).ready(function () {
 	$('input[name="choose-flight"]').change(function (e) {
 		if ($('#choose-flight-02:checked').length > 0) {
 			htmlRender = `<div class="col">
-							<div class="inner inner-last position-relative p-3">
-								<label class="trigger-flat" data-calendar="2" for="">Ngày trở về</label>
+							<div class="inner inner-last position-relative p-3 trigger-flat" data-calendar="2">
+								<label  for="">Ngày trở về</label>
 								<div class="d-flex align-items-center box-inner">
 									<i class="fad fa-calendar-alt color-main h6 mb-0"></i>
 									<input type="text" placeholder="Departure Date"
 									       class="border-0 rounded-0 py-0 form-control form-date flatpickr flatpickr-input"
 									       id="date-return"/>
 								</div>
-								<small class="d-inline-block mt-1 color-red">(ÂL: 12-02 Năm Tân Sửu )</small>
+								<small class="d-inline-block mt-1 color-red text-desc">(ÂL: 12-02 Năm Tân Sửu )</small>
 							</div>
 						</div>`;
 			
@@ -330,15 +330,22 @@ $(document).ready(function () {
 	
 	
 	$(".passenger-dropdown").click(function () {
-		$(".passenger-dropdown-content").fadeToggle();
+		$(".passenger-dropdown-content").fadeIn();
 	});
 	
-	$("#passenger-close").click(function () {
+	$("#passenger-close").click(function (e) {
+		e.stopPropagation();
 		$(".passenger-dropdown-content").fadeOut();
 	});
 	
+	$(document).on("mouseup", function (e) {
+		var o = $(".form-choose-people");
+		o.is(e.target) || 0 !== o.has(e.target).length || (
+			$(".passenger-dropdown .passenger-dropdown-content").fadeOut())
+	});
+	
 	$('.trigger-select').on("click", function () {
-		$(this).next('.box-inner').find('select').select2('open');
+		$(this).find('.box-inner select').select2('open');
 	});
 	
 	$(document).on("click", ".callModal", function () {
